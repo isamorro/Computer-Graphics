@@ -71,8 +71,10 @@ struct EntradaNGE
 class NodoGrafoEscena : public Objeto3D
 {
    protected:
-   // COMPLETAR: práctica 3: definir variables y métodos privados del nodo
-   // .......
+
+      
+   // Práctica 3: definir variables y métodos privados del nodo
+   std::vector<EntradaNGE> entradas ; // vector de entradas del nodo
 
    public:
 

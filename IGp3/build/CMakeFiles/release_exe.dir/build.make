@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/isabel/Escritorio/IG/IGp2/builds/linux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/isabel/Escritorio/IG/IGp2/build
+CMAKE_BINARY_DIR = /home/isabel/Escritorio/IG/IGp3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/release_exe.dir/depend.make
@@ -72,268 +72,268 @@ include CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/animacion.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/animacion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/animacion.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/animacion.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/animacion.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/animacion.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/animacion.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/camara.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/camara.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/camara.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/camara.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/camara.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/camara.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/camara.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/escena.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/escena.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/escena.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/escena.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/escena.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/escena.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/escena.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/main.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/main.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/main.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/main.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/main.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/main.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o: /home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o -c /home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o: /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o: /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o: /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o: /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.s
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o: CMakeFiles/release_exe.dir/flags.make
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o: /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o: CMakeFiles/release_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o -MF CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o.d -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o -c /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp > CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.i
 
 CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.s
 
 # Object files for target release_exe
 release_exe_OBJECTS = \
@@ -360,35 +360,35 @@ release_exe_OBJECTS = \
 # External object files for target release_exe
 release_exe_EXTERNAL_OBJECTS =
 
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/build.make
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: /usr/lib/x86_64-linux-gnu/libGLX.so
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-/home/isabel/Escritorio/IG/IGp2/bin/release_exe: CMakeFiles/release_exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isabel/Escritorio/IG/IGp2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable /home/isabel/Escritorio/IG/IGp2/bin/release_exe"
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/animacion.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/aplicacion-ig.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/camara.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/escena.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-raton.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/eventos-teclado.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/grafo-escena.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/main.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-ind.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/malla-revol.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/materiales-luces.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/objeto3d.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/seleccion.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/src/vaos-vbos.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/ig-aux.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-jpg.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/lector-ply.cpp.o
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/build.make
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: /usr/lib/x86_64-linux-gnu/libGLX.so
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+/home/isabel/Escritorio/IG/IGp3/bin/release_exe: CMakeFiles/release_exe.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isabel/Escritorio/IG/IGp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable /home/isabel/Escritorio/IG/IGp3/bin/release_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/release_exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/release_exe.dir/build: /home/isabel/Escritorio/IG/IGp2/bin/release_exe
+CMakeFiles/release_exe.dir/build: /home/isabel/Escritorio/IG/IGp3/bin/release_exe
 .PHONY : CMakeFiles/release_exe.dir/build
 
 CMakeFiles/release_exe.dir/clean:
@@ -396,6 +396,6 @@ CMakeFiles/release_exe.dir/clean:
 .PHONY : CMakeFiles/release_exe.dir/clean
 
 CMakeFiles/release_exe.dir/depend:
-	cd /home/isabel/Escritorio/IG/IGp2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/isabel/Escritorio/IG/IGp2/builds/linux /home/isabel/Escritorio/IG/IGp2/builds/linux /home/isabel/Escritorio/IG/IGp2/build /home/isabel/Escritorio/IG/IGp2/build /home/isabel/Escritorio/IG/IGp2/build/CMakeFiles/release_exe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/isabel/Escritorio/IG/IGp3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/isabel/Escritorio/IG/IGp2/builds/linux /home/isabel/Escritorio/IG/IGp2/builds/linux /home/isabel/Escritorio/IG/IGp3/build /home/isabel/Escritorio/IG/IGp3/build /home/isabel/Escritorio/IG/IGp3/build/CMakeFiles/release_exe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/release_exe.dir/depend
 

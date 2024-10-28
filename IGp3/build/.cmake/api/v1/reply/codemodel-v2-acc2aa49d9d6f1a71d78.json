@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "debug_exe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-debug_exe-Debug-4c071272bea1b8187f03.json",
+					"jsonFile" : "target-debug_exe-Debug-d686244eb59843e1aaa4.json",
 					"name" : "debug_exe",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "release_exe::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-release_exe-Debug-6f9a4b249ca694a44b8a.json",
+					"jsonFile" : "target-release_exe-Debug-6278300f34b82b5c1df5.json",
 					"name" : "release_exe",
 					"projectIndex" : 0
 				}
@@ -58,7 +58,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/isabel/Escritorio/IG/IGp2/build",
+		"build" : "/home/isabel/Escritorio/IG/IGp3/build",
 		"source" : "/home/isabel/Escritorio/IG/IGp2/builds/linux"
 	},
 	"version" : 

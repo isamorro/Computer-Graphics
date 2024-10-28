@@ -70,11 +70,13 @@ void FGE_PulsarLevantarTecla( GLFWwindow* window, int key, int scancode, int act
    
    if ( glfwGetKey( window, GLFW_KEY_A ) == GLFW_PRESS )
    {
-      // COMPLETAR: Práctica 3: procesar pulsación de una tecla de animación
+      // Práctica 3: procesar pulsación de una tecla de animación
       //
       // procesar la tecla en la variable 'key' para actualizar el estado de animación
       // del objeto actual ('objeto'), se debe usar 'ProcesarTeclaAnimacion': si devuelve
       // 'true', forzar revisualizar escena (asignando valor a 'revisualizar_escena')
+
+      if (ProcesarTeclaAnimacion(objeto, key)) redib = true;
       
 
       return ; // finalizar la f.g.e, ya que si está la tecla A pulsada no se mira ninguna otra tecla.

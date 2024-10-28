@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/isabel/Escritorio/IG/IGp2/bin/release_exe"
-  "/home/isabel/Escritorio/IG/IGp2/bin/release_exe.pdb"
+  "/home/isabel/Escritorio/IG/IGp3/bin/release_exe"
+  "/home/isabel/Escritorio/IG/IGp3/bin/release_exe.pdb"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/cauce.cpp.o.d"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp2/materiales/src-cpp/fbo.cpp.o"
