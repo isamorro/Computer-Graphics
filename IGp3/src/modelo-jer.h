@@ -39,7 +39,7 @@ class Cabezal : public MallaRevol {
             const int num_verts_per, 
             const unsigned nperfiles,
             float radio,
-            float altura
+            float centro
         );
 };
 
