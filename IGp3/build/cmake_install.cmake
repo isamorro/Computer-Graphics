@@ -1,4 +1,4 @@
-# Install script for directory: /home/isabel/Escritorio/IG/IGp2/builds/linux
+# Install script for directory: /home/isabel/Escritorio/IG/IGp3/builds/linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

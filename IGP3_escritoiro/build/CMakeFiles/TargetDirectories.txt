@@ -1,0 +1,4 @@
+/home/isabel/Escritorio/IGP3_escritoiro/build/CMakeFiles/debug_exe.dir
+/home/isabel/Escritorio/IGP3_escritoiro/build/CMakeFiles/release_exe.dir
+/home/isabel/Escritorio/IGP3_escritoiro/build/CMakeFiles/edit_cache.dir
+/home/isabel/Escritorio/IGP3_escritoiro/build/CMakeFiles/rebuild_cache.dir
