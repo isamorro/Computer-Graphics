@@ -31,37 +31,57 @@ class Base : public MallaRevol {
             const int num_verts_per, 
             const unsigned nperfiles,
             float radio,
-            float altura
+            float altura,
+            float punto_inf_izq,
+            float punto_inf_izq_Y,
+            float punto_inf_izq_Z
         );
 };
 
 
-class Cabezal : public MallaRevol {
+class Cabezal : public MallaInd {
 
     public:
 
         // Constructor
         Cabezal
         (
-            const int num_verts_per,    // número de vértices del perfil original
-            const unsigned nperfiles,   // número de perfiles
-            float radio,                // radio del cabeza
+            float ancho,                
+            float altura,
+            float fondo,
             float centro_X,
             float centro_Y,
             float centro_Z
         );
 };
 
-class Brazo : public MallaInd {
+class BrazoVertical : public MallaInd {
 
     public:
 
         // Constructor
-        Brazo
+        BrazoVertical
         (
             float altura,
             float anchura,
             float extremo_inf_delantero_izq_X,
+            float extremo_inf_delantero_izq_Y,
+            float extremo_inf_delantero_izq_Z
+        );
+};
+
+class BrazoHorizontal : public MallaInd {
+
+    public:
+
+        // Constructor
+        BrazoHorizontal
+        (
+            float altura,
+            float anchura,
+            float fondo,
+            float extremo_inf_delantero_izq_X,
+            float extremo_inf_delantero_izq_Y,
             float extremo_inf_delantero_izq_Z
         );
 };

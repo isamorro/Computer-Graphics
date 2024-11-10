@@ -14,14 +14,18 @@
 #include "modelo-jer.h"
 
 
-// Forma un cilindro con tapa arriba
+// Forma un cilindro con ambas tapas
 
 Base::Base
 (
     const int num_verts_per,    // número de vertices del perfil original
     const unsigned nperfiles,   // número de perfiles
     float radio,                // tamaño del radio de la base
-    float altura                // altura de la base
+    float altura,               // altura de la base
+    float punto_inf_izq_X,
+    float punto_inf_izq_Y,
+    float punto_inf_izq_Z
+
 ) 
 {
 
@@ -29,31 +33,19 @@ Base::Base
 
     std::vector<glm::vec3> perfil = std::vector<glm::vec3>();
 
-    // n / 2 vértices para la altura
-    for (int i = 0; i < num_verts_per/2; i++){
-
-        float y = i*(altura / ( (num_verts_per/2) - 1));
-        perfil.push_back(glm::vec3(0.0, y, 0.0));
-
-    }
-
-    // n / 2 vértices del (0, altura , 0 ) al (radio, altura, 0)
-    for (int i = num_verts_per/2; i < num_verts_per; i++){
-
-        float x = i*(radio / ((num_verts_per/2) - 1));
-        perfil.push_back(glm::vec3(x, altura, 0.0));
-
-    }
+    perfil.push_back({punto_inf_izq_X, punto_inf_izq_Y, punto_inf_izq_Z});
+    perfil.push_back({punto_inf_izq_X, punto_inf_izq_Y + altura, punto_inf_izq_Z});
+    perfil.push_back({punto_inf_izq_X + radio, punto_inf_izq_Y + altura, punto_inf_izq_Z});
+    perfil.push_back({punto_inf_izq_X + radio, punto_inf_izq_Y, punto_inf_izq_Z});
 
     inicializar(perfil, nperfiles);
 }
 
-// Forma una semiesfera por revolución
 Cabezal::Cabezal
 (
-    const int num_verts_per,    // número de vértices del perfil original
-    const unsigned nperfiles,   // número de perfiles
-    float radio,                // radio del cabeza
+    float ancho,                
+    float altura,
+    float fondo,
     float centro_X,
     float centro_Y,
     float centro_Z
@@ -62,49 +54,33 @@ Cabezal::Cabezal
 
     ponerNombre("Cabezal de la lámpara por revolución");
 
-    std::vector<glm::vec3> perfil = std::vector<glm::vec3>();
+    
+    vertices.push_back({centro_X, centro_Y, centro_Z});
 
-    perfil.push_back(glm::vec3(0.0, radio, 0.0));
+    vertices.push_back({centro_X - ancho/2, centro_Y - altura, centro_Z + fondo/2});
+    vertices.push_back({centro_X - ancho/2, centro_Y - altura, centro_Z - fondo/2});
+    vertices.push_back({centro_X + ancho/2, centro_Y - altura, centro_Z - fondo/2});
+    vertices.push_back({centro_X + ancho/2, centro_Y - altura, centro_Z + fondo/2});
 
-    for(int i=0; i < num_verts_per; i++){
 
-        float angulo = ((i+1)*M_PI) / num_verts_per;
+    triangulos.push_back({0, 1, 2});
+    triangulos.push_back({0, 2, 3});
+    triangulos.push_back({0, 3, 4});
+    triangulos.push_back({0, 1, 4});
 
-        std::vector<std::vector<float>> matriz_rotacion = 
-        {   
-            {cos(angulo), -sin(angulo), 0},
-            {sin(angulo), cos(angulo), 0},
-            {0, 0, 1},
-        };
-
-        glm::vec3 vertice = {
-            matriz_rotacion[0][0] * 0.0 + matriz_rotacion[0][1] * -radio + matriz_rotacion[0][2] * 0.0,
-            matriz_rotacion[1][0] * 0.0 + matriz_rotacion[1][1] * -radio + matriz_rotacion[1][2] * 0.0,
-            matriz_rotacion[2][0] * 0.0 + matriz_rotacion[2][1] * -radio + matriz_rotacion[2][2] * 0.0,
-        };
-
-        perfil.push_back(vertice);
-    }
-
-    // Reescalamos a la posición que queremos 
-
-    for (size_t i=0; i < vertices.size(); i++){
-        vertices[i].x += centro_X;
-        vertices[i].y += centro_Y;
-        vertices[i].z += centro_Z;
-    }
-
-    inicializar(perfil, nperfiles);
+    triangulos.push_back({1, 2, 3});
+    triangulos.push_back({1, 3, 4});
 
 }
 
 // Forma los brazos de la lámpara por Mallas Indexadas
 
-Brazo::Brazo
+BrazoVertical::BrazoVertical
 (
     float altura,
     float anchura,
     float extremo_inf_delantero_izq_X,
+    float extremo_inf_delantero_izq_Y,
     float extremo_inf_delantero_izq_Z
 )
 {
@@ -112,7 +88,7 @@ Brazo::Brazo
     ponerNombre("Brazo de la lámpara por mallas indexadas");
 
    for (int i=0; i < 2; i++){
-      float y = i*altura;
+      float y = i*altura + extremo_inf_delantero_izq_Y;
       vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z});
       vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z - anchura});
       vertices.push_back({extremo_inf_delantero_izq_X + anchura, y, extremo_inf_delantero_izq_Z - anchura});
@@ -121,27 +97,74 @@ Brazo::Brazo
 
     // Base
 
-    triangulos.push_back({1, 2, 3});
-    triangulos.push_back({1, 3, 4});
+    triangulos.push_back({0, 1, 2});
+    triangulos.push_back({0, 2, 3});
 
     // Caras Laterales
 
-    triangulos.push_back({1, 4, 8});
-    triangulos.push_back({1, 5, 8});
+    triangulos.push_back({0, 3, 7});
+    triangulos.push_back({0, 4, 7});
 
-    triangulos.push_back({1, 2, 5});
+    triangulos.push_back({0, 1, 4});
+    triangulos.push_back({4, 5, 1});
+
+    triangulos.push_back({1, 5, 2});
     triangulos.push_back({5, 6, 2});
 
     triangulos.push_back({2, 6, 3});
     triangulos.push_back({6, 7, 3});
 
-    triangulos.push_back({3, 7, 4});
-    triangulos.push_back({7, 8, 4});
+    // Tapa
+
+    triangulos.push_back({4, 5, 6});
+    triangulos.push_back({4, 6, 7});
+
+}
+
+BrazoHorizontal::BrazoHorizontal
+(
+    float altura,
+    float anchura,
+    float fondo,
+    float extremo_inf_delantero_izq_X,
+    float extremo_inf_delantero_izq_Y,
+    float extremo_inf_delantero_izq_Z
+)
+{
+
+    ponerNombre("Brazo de la lámpara por mallas indexadas");
+
+   for (int i=0; i < 2; i++){
+      float y = i*altura + extremo_inf_delantero_izq_Y;
+      vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z});
+      vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z - fondo});
+      vertices.push_back({extremo_inf_delantero_izq_X + anchura, y, extremo_inf_delantero_izq_Z - fondo});
+      vertices.push_back({extremo_inf_delantero_izq_X + anchura, y, extremo_inf_delantero_izq_Z});
+   }
+
+    // Base
+
+    triangulos.push_back({0, 1, 2});
+    triangulos.push_back({0, 2, 3});
+
+    // Caras Laterales
+
+    triangulos.push_back({0, 3, 7});
+    triangulos.push_back({0, 4, 7});
+
+    triangulos.push_back({0, 1, 4});
+    triangulos.push_back({4, 5, 1});
+
+    triangulos.push_back({1, 5, 2});
+    triangulos.push_back({5, 6, 2});
+
+    triangulos.push_back({2, 6, 3});
+    triangulos.push_back({6, 7, 3});
 
     // Tapa
 
-    triangulos.push_back({5, 6, 7});
-    triangulos.push_back({5, 7, 8});
+    triangulos.push_back({4, 5, 6});
+    triangulos.push_back({4, 6, 7});
 
 }
 
@@ -162,9 +185,10 @@ Lampara::Lampara()
     base->ponerIdentificador(identificador);
     identificador++;
 
-        // rotaciones etc etc
+        // ...
     
-    base->agregar(new Base(100, 10, 0.5, 0.5));
+    base->agregar(new Base(4, 10, 0.5, 0.25, 0, 0, 0));
+
 
     //// BRAZO INFERIOR de la lámpara
 
@@ -175,7 +199,7 @@ Lampara::Lampara()
 
         // ...
     
-    brazo_inferior->agregar(new Brazo(0.75, 0.25, 0.65, 0.25));
+    brazo_inferior->agregar(new BrazoVertical(1, 0.25, 0.15, 0.25, 0.25));
 
     //// BRAZO SUPERIOR de la lámpara
 
@@ -186,7 +210,18 @@ Lampara::Lampara()
 
         // ...
     
-    brazo_superior->agregar(new Brazo(0.5, 0.25, 0.65, 1.25));
+    brazo_superior->agregar(new BrazoVertical(0.8, 0.25, 0.15, 1.25, 0.25));
+
+    //// BRAZO LATERAL de la lámpara
+
+    NodoGrafoEscena *brazo_lateral = new NodoGrafoEscena();
+    brazo_lateral->ponerNombre("Brazo lateral de la lámpara");
+    brazo_lateral->ponerIdentificador(identificador);
+    identificador++;
+
+        // ...
+    
+    brazo_lateral->agregar(new BrazoHorizontal(0.15, 0.45, 0.25, -0.30, 1.9, 0.25));
 
     //// CABEZAL de la lámpara
 
@@ -197,11 +232,17 @@ Lampara::Lampara()
 
         // ...
     
-    cabezal->agregar(new Cabezal(100, 10, 0.3, 0.35, 1.75, 0.125));
+    cabezal->agregar(new Cabezal(0.4, 0.5, 0.4, -0.3, 1.9, 0.125));
 
     //// LÁMPARA
-
+    
+   
     lampara->agregar(base);
+    base->agregar(brazo_inferior);
+    brazo_inferior->agregar(brazo_superior);
+    brazo_superior->agregar(brazo_lateral);
+    brazo_lateral->agregar(cabezal);
+    
     agregar(lampara);
 
 }
