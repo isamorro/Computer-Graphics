@@ -3,8 +3,6 @@
 
 #include "aplicacion-ig.h"
 
-
-
 // evita la necesidad de escribir std::
 using namespace std ;
 

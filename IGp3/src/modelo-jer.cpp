@@ -1,14 +1,5 @@
-// *********************************************************************
-// ** 
-// ** Nombre: Isabel 
-// ** Apellidos: Morro Tabares
-// ** Titulación: GIM
-// ** Email: isabelmorro@correo.ugr.es 
-// ** DNI: 79095945A
-// **
-// ** Curso 2024/2025
-// ** Asignatura: INFORMÁTICA GRÁFICA
-// *********************************************************************
+// Nombre: Isabel, Apellidos: Morro Tabares, Titulación: GIM
+// Email: isabelmorro@correo.ugr.es, DNI: 79095945A
 
 
 #include "grafo-escena.h"
@@ -206,7 +197,6 @@ Lampara::Lampara()
     bombilla->agregar(translate(vec3(0.0, -0.1, 0.0)));
     bombilla->agregar(new Rectangulo(0.1, 0.1, 0.1));
 
-
 //// INTERRUPTOR
 
     NodoGrafoEscena *interruptor = new NodoGrafoEscena();
@@ -217,8 +207,6 @@ Lampara::Lampara()
     interruptor->ponerColor({0.4, 0.2, 0.0}); // marron oscuro
     interruptor->agregar(translate(vec3(-0.2, 0.8, 0.0)));
     interruptor->agregar(new Rectangulo(0.15, 0.15, 0.05));
-
-
 
 //// LÁMPARA
 

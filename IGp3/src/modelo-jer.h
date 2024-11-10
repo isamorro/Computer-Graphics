@@ -13,7 +13,6 @@ using namespace glm;
 using namespace std;
 
 
-// Clases necesarias para la creación de una lámpara de escritorio
 /*****************************************************************************/
 
 class Base : public MallaRevol {

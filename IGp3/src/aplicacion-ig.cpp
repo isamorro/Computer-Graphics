@@ -53,7 +53,7 @@ AplicacionIG::AplicacionIG()
    // Práctica 2: añadir escena de la práctica 2
    escenas.push_back( new Escena2() );
 
-   // COMPLETAR: práctica 3: añadir escena de la práctica 3
+   // Práctica 3: añadir escena de la práctica 3
    escenas.push_back( new Escena3());
 
 
@@ -67,9 +67,6 @@ AplicacionIG::AplicacionIG()
    //
    // hacer 'push_back' en el vector de escenas de una instancia de 'Escena5'
    // ......
-
-
-
 
    cout << "Objetos creados." << endl ;
 }
@@ -199,8 +196,6 @@ void AplicacionIG::visualizarFrame()
    if ( aplicacionIG->visualizar_normales ) 
       escena->visualizarNormales(  );
    
-
-
    // visualizar en pantalla el buffer trasero (donde se han dibujado las primitivas)
    glfwSwapBuffers( ventana_glfw );
 
