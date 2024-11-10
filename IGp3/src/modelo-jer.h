@@ -1,10 +1,5 @@
-// *********************************************************************
-// ** 
-// ** Isabel Morro Tabares, 79095945A
-// ** Curso 2024/2025
-// ** Asignatura: INFORMÁTICA GRÁFICA
-// ** Declaración de la clases necesarias para crear el objeto jerárquico
-// *********************************************************************
+// Nombre: Isabel, Apellidos: Morro Tabares, Titulación: GIM
+// Email: isabelmorro@correo.ugr.es, DNI: 79095945A
 
 #ifndef MODELO_JER_HPP
 #define MODELO_JER_HPP
@@ -75,7 +70,7 @@ class Lampara : public NodoGrafoEscena {
         mat4 *m_traslacion_brazo_lateral = nullptr;
         mat4 *m_rotacion_cabezal = nullptr;
         mat4 *m_scale_bombilla = nullptr;
-        mat4 *m_traslacion_base = nullptr;        
+        mat4 *m_traslacion_lampara = nullptr;        
 
     public:
 

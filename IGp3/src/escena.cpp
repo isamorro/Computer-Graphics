@@ -1,37 +1,5 @@
-// *********************************************************************
-// **
-// ** Asignatura: INFORMÁTICA GRÁFICA
-// ** 
-// ** Gestión de escenas (implementaciones). Clase 'Escena' y derivadas.
-// ** Copyright (C) 2016-2024 Carlos Ureña
-// **
-// ** Implementación de la clase 'Escena' y derivadas (una por cada práctica)
-// **
-// **  + Escena: clase con una colección de objetos para visualizar, las fuentes de luz
-// **    y una cámara. En cada momento se visualiza uno de los objetos (se conmuta con 'o')
-// **    Las clases derivadas incluyen cada una un constructor específico que crea el objeto,
-// **    son estas:
-// **
-// **       + Escena1 : práctica 1
-// **       + Escena2 : práctica 2
-// **       + Escena3 : práctica 3
-// **       + Escena4 : práctica 4
-// **       + Escena5 : práctica 5
-// **
-// ** This program is free software: you can redistribute it and/or modify
-// ** it under the terms of the GNU General Public License as published by
-// ** the Free Software Foundation, either version 3 of the License, or
-// ** (at your option) any later version.
-// **
-// ** This program is distributed in the hope that it will be useful,
-// ** but WITHOUT ANY WARRANTY; without even the implied warranty of
-// ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// ** GNU General Public License for more details.
-// **
-// ** You should have received a copy of the GNU General Public License
-// ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
-// **
-// *********************************************************************
+// Nombre: Isabel, Apellidos: Morro Tabares, Titulación: GIM
+// Email: isabelmorro@correo.ugr.es, DNI: 79095945A
 
 #include "ig-aux.h"
 

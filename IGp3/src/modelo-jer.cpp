@@ -1,9 +1,13 @@
 // *********************************************************************
 // ** 
-// ** Isabel Morro Tabares, 79095945A
+// ** Nombre: Isabel 
+// ** Apellidos: Morro Tabares
+// ** Titulación: GIM
+// ** Email: isabelmorro@correo.ugr.es 
+// ** DNI: 79095945A
+// **
 // ** Curso 2024/2025
 // ** Asignatura: INFORMÁTICA GRÁFICA
-// ** Implementación de la clases necesarias para crear el objeto jerárquico
 // *********************************************************************
 
 
@@ -210,7 +214,7 @@ Lampara::Lampara()
     interruptor->ponerIdentificador(identificador);
     identificador++;
 
-    interruptor->ponerColor({0.4, 0.2, 0.0});
+    interruptor->ponerColor({0.4, 0.2, 0.0}); // marron oscuro
     interruptor->agregar(translate(vec3(-0.2, 0.8, 0.0)));
     interruptor->agregar(new Rectangulo(0.15, 0.15, 0.05));
 
@@ -218,7 +222,7 @@ Lampara::Lampara()
 
 //// LÁMPARA
 
-    unsigned indice_traslacion_base = lampara->agregar(translate(vec3(0.0, 0.0, 0.0)));         // 3
+    unsigned indice_traslacion_lampara = lampara->agregar(translate(vec3(0.0, 0.0, 0.0)));         // 3
    
     cabezal->agregar(bombilla);
     brazo_lateral->agregar(cabezal);
@@ -233,7 +237,7 @@ Lampara::Lampara()
     m_rotacion_cabezal = cabezal->leerPtrMatriz(indice_rotacion_cabezal);               
     m_scale_bombilla = bombilla->leerPtrMatriz(indice_scale_bombilla);
     agregar(lampara);
-    m_traslacion_base = lampara->leerPtrMatriz(indice_traslacion_base);                 
+    m_traslacion_lampara = lampara->leerPtrMatriz(indice_traslacion_lampara);                 
 
 }
 
@@ -284,7 +288,7 @@ void Lampara::actualizarEstadoParametro
         
             float A = 0.0;
             float B = 1.0;
-            *m_traslacion_base = translate(vec3(A + ((B-A)/2)*(1 + sin((M_PI/2)*t_sec)),0.0,0.0));
+            *m_traslacion_lampara = translate(vec3(A + ((B-A)/2)*(1 + sin((M_PI/2)*t_sec)),0.0,0.0));
 
             break;
         }

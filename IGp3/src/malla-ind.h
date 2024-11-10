@@ -1,29 +1,5 @@
-// *********************************************************************
-// **
-// ** Asignatura: INFORMÁTICA GRÁFICA
-// ** 
-// ** Mallas indexadas (declaraciones). Clase 'MallaInd' y derivadas.
-// ** Copyright (C) 2016-2024 Carlos Ureña
-// **
-// ** Declaración de las clases 
-// **        + MallaInd: malla indexada de triángulos (derivada de Objeto3D)
-// **        + MallaPLY: malla indexada de triángulos, leída de un PLY (derivada de MallaInd)
-// **        + algunas clases derivadas de MallaInd.
-// **
-// ** This program is free software: you can redistribute it and/or modify
-// ** it under the terms of the GNU General Public License as published by
-// ** the Free Software Foundation, either version 3 of the License, or
-// ** (at your option) any later version.
-// **
-// ** This program is distributed in the hope that it will be useful,
-// ** but WITHOUT ANY WARRANTY; without even the implied warranty of
-// ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// ** GNU General Public License for more details.
-// **
-// ** You should have received a copy of the GNU General Public License
-// ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
-// **
-// *********************************************************************
+// Nombre: Isabel, Apellidos: Morro Tabares, Titulación: GIM
+// Email: isabelmorro@correo.ugr.es, DNI: 79095945A
 
 #ifndef IG_MALLAIND_HPP
 #define IG_MALLAIND_HPP

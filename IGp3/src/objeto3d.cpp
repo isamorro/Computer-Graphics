@@ -1,29 +1,5 @@
-// *********************************************************************
-// **
-// ** Asignatura: INFORMÁTICA GRÁFICA
-// ** 
-// ** Objetos que se pueden visualizar (implementación). Clase 'Objeto3D'.
-// ** Copyright (C) 2016-2024 Carlos Ureña
-// **
-// ** Implementación de la clase 'Objeto3D' (objetos que se pueden 
-// ** visualizar). Son en esencia objetos de clases derivadas que 
-// ** definen un método llamado 'visualizarGL' (y otros parecidos).
-// ** También incluyen funcionalidad para gestionar las animaciones.
-// **
-// ** This program is free software: you can redistribute it and/or modify
-// ** it under the terms of the GNU General Public License as published by
-// ** the Free Software Foundation, either version 3 of the License, or
-// ** (at your option) any later version.
-// **
-// ** This program is distributed in the hope that it will be useful,
-// ** but WITHOUT ANY WARRANTY; without even the implied warranty of
-// ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// ** GNU General Public License for more details.
-// **
-// ** You should have received a copy of the GNU General Public License
-// ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
-// **
-// *********************************************************************
+// Nombre: Isabel, Apellidos: Morro Tabares, Titulación: GIM
+// Email: isabelmorro@correo.ugr.es, DNI: 79095945A
 
 #include <iostream>
 

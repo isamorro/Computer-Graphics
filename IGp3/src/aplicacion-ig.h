@@ -1,32 +1,5 @@
-// *********************************************************************
-// **
-// ** Asignatura: INFORMÁTICA GRÁFICA
-// ** 
-// ** Declaración de la clase 'AplicacionIG'
-// ** Copyright (C) 2016-2024 Carlos Ureña
-// **
-// ** La clase 'AplicacionIG' contine
-// **     
-// **     + ventana GLFW
-// **     + vector de escenas e índice de la escena actual
-// **     + variables de estado para gestionar el bucle de eventos (revisualizar_escena, terminar_programa)
-// **     + variables de estado del ratón para gestionar eventos de mover con botón pulsado (arrastrar).
-// **     + diversas variables de estado que determinan como se visualizan los objetos, las animaciones, etc ....
-// **     
-// ** This program is free software: you can redistribute it and/or modify
-// ** it under the terms of the GNU General Public License as published by
-// ** the Free Software Foundation, either version 3 of the License, or
-// ** (at your option) any later version.
-// **
-// ** This program is distributed in the hope that it will be useful,
-// ** but WITHOUT ANY WARRANTY; without even the implied warranty of
-// ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// ** GNU General Public License for more details.
-// **
-// ** You should have received a copy of the GNU General Public License
-// ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
-// **
-// *********************************************************************
+// Nombre: Isabel, Apellidos: Morro Tabares, Titulación: GIM
+// Email: isabelmorro@correo.ugr.es, DNI: 79095945A
 
 
 #ifndef APLICACION_IG_H
