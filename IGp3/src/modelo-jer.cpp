@@ -13,8 +13,7 @@
 #include "malla-revol.h"
 #include "modelo-jer.h"
 
-
-// Forma un cilindro con ambas tapas
+/*****************************************************************************/
 
 Base::Base
 (
@@ -40,6 +39,8 @@ Base::Base
 
     inicializar(perfil, nperfiles);
 }
+
+/*****************************************************************************/
 
 Cabezal::Cabezal
 (
@@ -73,7 +74,7 @@ Cabezal::Cabezal
 
 }
 
-// Forma los brazos de la lámpara por Mallas Indexadas
+/*****************************************************************************/
 
 BrazoVertical::BrazoVertical
 (
@@ -120,6 +121,8 @@ BrazoVertical::BrazoVertical
     triangulos.push_back({4, 6, 7});
 
 }
+
+/*****************************************************************************/
 
 BrazoHorizontal::BrazoHorizontal
 (
@@ -168,6 +171,8 @@ BrazoHorizontal::BrazoHorizontal
 
 }
 
+/*****************************************************************************/
+
 Lampara::Lampara()
 {
 
@@ -178,19 +183,20 @@ Lampara::Lampara()
     NodoGrafoEscena *lampara = new NodoGrafoEscena();
 
 
-    //// BASE de la lámpara
+//// BASE de la lámpara
 
     NodoGrafoEscena *base = new NodoGrafoEscena();
     base->ponerNombre("Base de la lámpara");
     base->ponerIdentificador(identificador);
     identificador++;
 
-        // ...
-    
+   // unsigned indice_rotacion_base = base->agregar(rotate(float(M_PI/2), vec3(0.0, 1.0, 0.0))); // rotacion de pi/2 sobre el eje Y
+
+    base->ponerColor({0.8, 0.8, 0.8});  // gris oscuro
     base->agregar(new Base(4, 10, 0.5, 0.25, 0, 0, 0));
 
 
-    //// BRAZO INFERIOR de la lámpara
+//// BRAZO INFERIOR de la lámpara
 
     NodoGrafoEscena *brazo_inferior = new NodoGrafoEscena();
     brazo_inferior->ponerNombre("Brazo inferior de la lámpara");
@@ -198,10 +204,10 @@ Lampara::Lampara()
     identificador++;
 
         // ...
-    
+
     brazo_inferior->agregar(new BrazoVertical(1, 0.25, 0.15, 0.25, 0.25));
 
-    //// BRAZO SUPERIOR de la lámpara
+//// BRAZO SUPERIOR de la lámpara
 
     NodoGrafoEscena *brazo_superior = new NodoGrafoEscena();
     brazo_superior->ponerNombre("Brazo superior de la lámpara");
@@ -212,18 +218,20 @@ Lampara::Lampara()
     
     brazo_superior->agregar(new BrazoVertical(0.8, 0.25, 0.15, 1.25, 0.25));
 
-    //// BRAZO LATERAL de la lámpara
+//// BRAZO LATERAL de la lámpara
 
     NodoGrafoEscena *brazo_lateral = new NodoGrafoEscena();
     brazo_lateral->ponerNombre("Brazo lateral de la lámpara");
     brazo_lateral->ponerIdentificador(identificador);
     identificador++;
 
-        // ...
+    unsigned indice_traslacion_b_lat = brazo_lateral->agregar(translate(vec3{0.0, 0.0, 0.0}));
     
+    brazo_lateral->ponerColor({1.0, 0.75, 0.8}); // rosa claro
+
     brazo_lateral->agregar(new BrazoHorizontal(0.15, 0.45, 0.25, -0.30, 1.9, 0.25));
 
-    //// CABEZAL de la lámpara
+//// CABEZAL de la lámpara
 
     NodoGrafoEscena *cabezal = new NodoGrafoEscena();
     cabezal->ponerNombre("Cabezal de la lámpara");
@@ -234,8 +242,9 @@ Lampara::Lampara()
     
     cabezal->agregar(new Cabezal(0.4, 0.5, 0.4, -0.3, 1.9, 0.125));
 
-    //// LÁMPARA
-    
+//// LÁMPARA
+
+    unsigned indice_traslacion_base = lampara->agregar(translate(vec3(0.0, 0.0, 0.0))); // traslación de 0.25 en eje X
    
     lampara->agregar(base);
     base->agregar(brazo_inferior);
@@ -243,7 +252,51 @@ Lampara::Lampara()
     brazo_superior->agregar(brazo_lateral);
     brazo_lateral->agregar(cabezal);
     
+    // m_rotacion_base = base->leerPtrMatriz(indice_rotacion_base);
+
+    m_traslacion_brazo_lateral = brazo_lateral->leerPtrMatriz(indice_traslacion_b_lat);
+    
     agregar(lampara);
+    m_traslacion_base = lampara->leerPtrMatriz(indice_traslacion_base);
 
 }
 
+
+unsigned Lampara::leerNumParametros() const{
+    return 2;
+}
+
+void Lampara::actualizarEstadoParametro
+(
+    const unsigned iParam, 
+    const float t_sec    
+)
+{
+    switch (iParam) 
+    {
+        case 0: {
+            // Oscilación del brazo de un 0.5
+            float A = -0.5;
+            float B = 0.0;
+            *m_traslacion_brazo_lateral = translate(vec3(0.0, A + ((B-A)/2)*(1 + sin((M_PI/2)*t_sec)), 0.0));
+            break;
+        }
+        case 1: {
+            // *m_rotacion_base = rotate(float(0.5*cos(2*M_PI*t_sec)),vec3{1.0,0.0,0.0});
+            
+            // Osiclación de la figura de un 1.0
+            float A = 0.0;
+            float B = 1.0;
+            *m_traslacion_base = translate(vec3(A + ((B-A)/2)*(1 + sin((M_PI/2)*t_sec)),0.0,0.0));
+            break;
+        }
+        
+
+        // case 2:
+        // break;
+
+        // case 3:
+        // break;
+
+    }
+}

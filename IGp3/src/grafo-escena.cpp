@@ -299,6 +299,7 @@ glm::mat4 * NodoGrafoEscena::leerPtrMatriz( unsigned indice )
    assert( indice < entradas.size() );
    assert( entradas[indice].tipo == TipoEntNGE::transformacion );
    assert( entradas[indice].matriz != nullptr );
+   
    return entradas[indice].matriz ;
 }
 

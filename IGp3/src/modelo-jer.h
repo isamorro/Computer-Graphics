@@ -91,22 +91,24 @@ class Lampara : public NodoGrafoEscena {
 
     // protected:
 
-    //     mat4 *m_rot_cabezal = nullptr;
-    //     mat4 *m_tras_brazos = nullptr;
-    //     mat4 *m_rot_brazos = nullptr;
-    //     mat4 *m_rot_base = nullptr;
-    //     mat4 *m_tras_base = nullptr;  
+        mat4 *m_rotacion_base = nullptr;
+        mat4 *m_traslacion_base = nullptr;
+
+
+        mat4 *m_rotacion_brazo_lateral = nullptr;
+        mat4 *m_traslacion_brazo_lateral = nullptr;
 
     public:
         
         // Redefinición de métodos de Objeto3D
 
-        // unsigned leerNumParametros() const;
-        // virtual void actualizarEstadoParametro
-        // ( 
-        //     const unsigned iParam, 
-        //     const float t_sec 
-        // );
+        unsigned leerNumParametros() const;
+
+        virtual void actualizarEstadoParametro
+        ( 
+            const unsigned iParam, 
+            const float t_sec 
+        );
 
         // Constructor
         Lampara();
