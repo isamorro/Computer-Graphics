@@ -17,9 +17,9 @@
 using namespace glm;
 using namespace std;
 
-// Realización de la figura 3.9 (lámpara de escritorio)
 
-// MODELO JERÁRQUICO
+// Clases necesarias para la creación de una lámpara de escritorio
+/*****************************************************************************/
 
 class Base : public MallaRevol {
 
@@ -31,13 +31,11 @@ class Base : public MallaRevol {
             const int num_verts_per, 
             const unsigned nperfiles,
             float radio,
-            float altura,
-            float punto_inf_izq,
-            float punto_inf_izq_Y,
-            float punto_inf_izq_Z
+            float altura
         );
 };
 
+/*****************************************************************************/
 
 class Cabezal : public MallaInd {
 
@@ -48,57 +46,41 @@ class Cabezal : public MallaInd {
         (
             float ancho,                
             float altura,
-            float fondo,
-            float centro_X,
-            float centro_Y,
-            float centro_Z
+            float fondo
+
         );
 };
 
-class BrazoVertical : public MallaInd {
+/*****************************************************************************/
+
+class Rectangulo : public MallaInd {
 
     public:
 
         // Constructor
-        BrazoVertical
+        Rectangulo
         (
             float altura,
             float anchura,
-            float extremo_inf_delantero_izq_X,
-            float extremo_inf_delantero_izq_Y,
-            float extremo_inf_delantero_izq_Z
+            float fondo
         );
 };
 
-class BrazoHorizontal : public MallaInd {
-
-    public:
-
-        // Constructor
-        BrazoHorizontal
-        (
-            float altura,
-            float anchura,
-            float fondo,
-            float extremo_inf_delantero_izq_X,
-            float extremo_inf_delantero_izq_Y,
-            float extremo_inf_delantero_izq_Z
-        );
-};
-
+/*****************************************************************************/
 
 class Lampara : public NodoGrafoEscena {
 
-    // protected:
+    protected:
 
-        mat4 *m_rotacion_base = nullptr;
-        mat4 *m_traslacion_base = nullptr;
-
-
-        mat4 *m_rotacion_brazo_lateral = nullptr;
         mat4 *m_traslacion_brazo_lateral = nullptr;
+        mat4 *m_rotacion_cabezal = nullptr;
+        mat4 *m_scale_bombilla = nullptr;
+        mat4 *m_traslacion_base = nullptr;        
 
     public:
+
+        // Constructor
+        Lampara();
         
         // Redefinición de métodos de Objeto3D
 
@@ -109,10 +91,7 @@ class Lampara : public NodoGrafoEscena {
             const unsigned iParam, 
             const float t_sec 
         );
-
-        // Constructor
-        Lampara();
-
+        
 };
 
 

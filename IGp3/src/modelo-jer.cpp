@@ -19,12 +19,8 @@ Base::Base
 (
     const int num_verts_per,    // número de vertices del perfil original
     const unsigned nperfiles,   // número de perfiles
-    float radio,                // tamaño del radio de la base
-    float altura,               // altura de la base
-    float punto_inf_izq_X,
-    float punto_inf_izq_Y,
-    float punto_inf_izq_Z
-
+    float radio,                
+    float altura                
 ) 
 {
 
@@ -32,13 +28,14 @@ Base::Base
 
     std::vector<glm::vec3> perfil = std::vector<glm::vec3>();
 
-    perfil.push_back({punto_inf_izq_X, punto_inf_izq_Y, punto_inf_izq_Z});
-    perfil.push_back({punto_inf_izq_X, punto_inf_izq_Y + altura, punto_inf_izq_Z});
-    perfil.push_back({punto_inf_izq_X + radio, punto_inf_izq_Y + altura, punto_inf_izq_Z});
-    perfil.push_back({punto_inf_izq_X + radio, punto_inf_izq_Y, punto_inf_izq_Z});
+    perfil.push_back({0.0, 0.0, 0.0});
+    perfil.push_back({0.0, altura, 0.0});
+    perfil.push_back({ radio, altura, 0.0});
+    perfil.push_back({ radio, 0.0, 0.0});
 
     inicializar(perfil, nperfiles);
 }
+
 
 /*****************************************************************************/
 
@@ -46,22 +43,19 @@ Cabezal::Cabezal
 (
     float ancho,                
     float altura,
-    float fondo,
-    float centro_X,
-    float centro_Y,
-    float centro_Z
+    float fondo
 )
 {
 
     ponerNombre("Cabezal de la lámpara por revolución");
 
     
-    vertices.push_back({centro_X, centro_Y, centro_Z});
+    vertices.push_back({0.0, altura, 0.0});
 
-    vertices.push_back({centro_X - ancho/2, centro_Y - altura, centro_Z + fondo/2});
-    vertices.push_back({centro_X - ancho/2, centro_Y - altura, centro_Z - fondo/2});
-    vertices.push_back({centro_X + ancho/2, centro_Y - altura, centro_Z - fondo/2});
-    vertices.push_back({centro_X + ancho/2, centro_Y - altura, centro_Z + fondo/2});
+    vertices.push_back({-ancho/2,  0.0, fondo/2});
+    vertices.push_back({-ancho/2,  0.0, - fondo/2});
+    vertices.push_back({ancho/2,  0.0,  - fondo/2});
+    vertices.push_back({ancho/2,  0.0,  fondo/2});
 
 
     triangulos.push_back({0, 1, 2});
@@ -74,76 +68,29 @@ Cabezal::Cabezal
 
 }
 
-/*****************************************************************************/
-
-BrazoVertical::BrazoVertical
-(
-    float altura,
-    float anchura,
-    float extremo_inf_delantero_izq_X,
-    float extremo_inf_delantero_izq_Y,
-    float extremo_inf_delantero_izq_Z
-)
-{
-
-    ponerNombre("Brazo de la lámpara por mallas indexadas");
-
-   for (int i=0; i < 2; i++){
-      float y = i*altura + extremo_inf_delantero_izq_Y;
-      vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z});
-      vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z - anchura});
-      vertices.push_back({extremo_inf_delantero_izq_X + anchura, y, extremo_inf_delantero_izq_Z - anchura});
-      vertices.push_back({extremo_inf_delantero_izq_X + anchura, y, extremo_inf_delantero_izq_Z});
-   }
-
-    // Base
-
-    triangulos.push_back({0, 1, 2});
-    triangulos.push_back({0, 2, 3});
-
-    // Caras Laterales
-
-    triangulos.push_back({0, 3, 7});
-    triangulos.push_back({0, 4, 7});
-
-    triangulos.push_back({0, 1, 4});
-    triangulos.push_back({4, 5, 1});
-
-    triangulos.push_back({1, 5, 2});
-    triangulos.push_back({5, 6, 2});
-
-    triangulos.push_back({2, 6, 3});
-    triangulos.push_back({6, 7, 3});
-
-    // Tapa
-
-    triangulos.push_back({4, 5, 6});
-    triangulos.push_back({4, 6, 7});
-
-}
 
 /*****************************************************************************/
 
-BrazoHorizontal::BrazoHorizontal
+Rectangulo::Rectangulo
 (
     float altura,
     float anchura,
-    float fondo,
-    float extremo_inf_delantero_izq_X,
-    float extremo_inf_delantero_izq_Y,
-    float extremo_inf_delantero_izq_Z
+    float fondo
 )
 {
 
-    ponerNombre("Brazo de la lámpara por mallas indexadas");
+    ponerNombre("Retangulo que forma parte de la lámpara por mallas indexadas");
 
-   for (int i=0; i < 2; i++){
-      float y = i*altura + extremo_inf_delantero_izq_Y;
-      vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z});
-      vertices.push_back({extremo_inf_delantero_izq_X, y, extremo_inf_delantero_izq_Z - fondo});
-      vertices.push_back({extremo_inf_delantero_izq_X + anchura, y, extremo_inf_delantero_izq_Z - fondo});
-      vertices.push_back({extremo_inf_delantero_izq_X + anchura, y, extremo_inf_delantero_izq_Z});
-   }
+   
+    vertices.push_back({-anchura/2, 0.0, fondo/2});
+    vertices.push_back({-anchura/2, 0.0, -fondo/2});
+    vertices.push_back({anchura/2, 0.0, -fondo/2});
+    vertices.push_back({anchura/2, 0.0, fondo/2});
+   
+    vertices.push_back({-anchura/2, altura, fondo/2});
+    vertices.push_back({-anchura/2, altura, -fondo/2});
+    vertices.push_back({anchura/2, altura, -fondo/2});
+    vertices.push_back({anchura/2, altura, fondo/2});
 
     // Base
 
@@ -176,7 +123,7 @@ BrazoHorizontal::BrazoHorizontal
 Lampara::Lampara()
 {
 
-    // identificador
+
     unsigned identificador = 1;
     
     ponerNombre("Lampara");
@@ -190,10 +137,9 @@ Lampara::Lampara()
     base->ponerIdentificador(identificador);
     identificador++;
 
-   // unsigned indice_rotacion_base = base->agregar(rotate(float(M_PI/2), vec3(0.0, 1.0, 0.0))); // rotacion de pi/2 sobre el eje Y
-
-    base->ponerColor({0.8, 0.8, 0.8});  // gris oscuro
-    base->agregar(new Base(4, 10, 0.5, 0.25, 0, 0, 0));
+    base->ponerColor({0.4, 0.2, 0.0}); // marrón oscuro
+    base->agregar(translate(vec3(0.3, 0.0, -0.125)));
+    base->agregar(new Base(4, 10, 0.5, 0.25));
 
 
 //// BRAZO INFERIOR de la lámpara
@@ -203,9 +149,9 @@ Lampara::Lampara()
     brazo_inferior->ponerIdentificador(identificador);
     identificador++;
 
-        // ...
-
-    brazo_inferior->agregar(new BrazoVertical(1, 0.25, 0.15, 0.25, 0.25));
+    brazo_inferior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+    brazo_inferior->agregar(translate(vec3(0.275, 0.25, 0.125)));
+    brazo_inferior->agregar(new Rectangulo(1, 0.25, 0.25));
 
 //// BRAZO SUPERIOR de la lámpara
 
@@ -214,9 +160,8 @@ Lampara::Lampara()
     brazo_superior->ponerIdentificador(identificador);
     identificador++;
 
-        // ...
-    
-    brazo_superior->agregar(new BrazoVertical(0.8, 0.25, 0.15, 1.25, 0.25));
+    brazo_superior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+    brazo_superior->agregar(new Rectangulo(2, 0.25, 0.25));
 
 //// BRAZO LATERAL de la lámpara
 
@@ -225,11 +170,11 @@ Lampara::Lampara()
     brazo_lateral->ponerIdentificador(identificador);
     identificador++;
 
-    unsigned indice_traslacion_b_lat = brazo_lateral->agregar(translate(vec3{0.0, 0.0, 0.0}));
+    unsigned indice_traslacion_b_lat = brazo_lateral->agregar(translate(vec3{0.0, 0.0, 0.0}));  // 0
     
-    brazo_lateral->ponerColor({1.0, 0.75, 0.8}); // rosa claro
-
-    brazo_lateral->agregar(new BrazoHorizontal(0.15, 0.45, 0.25, -0.30, 1.9, 0.25));
+    brazo_lateral->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+    brazo_lateral->agregar(translate(vec3(-0.45, 1.8, 0.0)));
+    brazo_lateral->agregar(new Rectangulo(0.15, 0.65, 0.25));
 
 //// CABEZAL de la lámpara
 
@@ -238,32 +183,64 @@ Lampara::Lampara()
     cabezal->ponerIdentificador(identificador);
     identificador++;
 
-        // ...
+    unsigned indice_rotacion_cabezal = cabezal->agregar(rotate(0.0f, vec3(0.0, 1.0, 0.0)));     // 1
     
-    cabezal->agregar(new Cabezal(0.4, 0.5, 0.4, -0.3, 1.9, 0.125));
+    cabezal->ponerColor({0.4, 0.2, 0.0}); // marron oscuro
+    cabezal->agregar(translate(vec3(-0.3, -0.5, 0.0)));
+    cabezal->agregar(new Cabezal(0.4, 0.5, 0.4));
+
+//// BOMBILLA DE LA LAMPARA
+
+    NodoGrafoEscena *bombilla = new NodoGrafoEscena();
+    bombilla->ponerNombre("Bombilla de la lámpara");
+    bombilla->ponerIdentificador(identificador);
+    identificador++;
+
+    unsigned indice_scale_bombilla = bombilla->agregar(scale(vec3(1.0, 1.0, 1.0)));             // 2
+
+    bombilla->ponerColor({1.0, 1.0, 0.0}); // amarillo
+    bombilla->agregar(translate(vec3(0.0, -0.1, 0.0)));
+    bombilla->agregar(new Rectangulo(0.1, 0.1, 0.1));
+
+
+//// INTERRUPTOR
+
+    NodoGrafoEscena *interruptor = new NodoGrafoEscena();
+    interruptor->ponerNombre("Interruptor de la lámpara");
+    interruptor->ponerIdentificador(identificador);
+    identificador++;
+
+    interruptor->ponerColor({0.4, 0.2, 0.0});
+    interruptor->agregar(translate(vec3(-0.2, 0.8, 0.0)));
+    interruptor->agregar(new Rectangulo(0.15, 0.15, 0.05));
+
+
 
 //// LÁMPARA
 
-    unsigned indice_traslacion_base = lampara->agregar(translate(vec3(0.0, 0.0, 0.0))); // traslación de 0.25 en eje X
+    unsigned indice_traslacion_base = lampara->agregar(translate(vec3(0.0, 0.0, 0.0)));         // 3
    
-    lampara->agregar(base);
-    base->agregar(brazo_inferior);
-    brazo_inferior->agregar(brazo_superior);
-    brazo_superior->agregar(brazo_lateral);
+    cabezal->agregar(bombilla);
     brazo_lateral->agregar(cabezal);
+    brazo_superior->agregar(brazo_lateral);
+    brazo_inferior->agregar(brazo_superior);
+    brazo_inferior->agregar(interruptor);
+    base->agregar(brazo_inferior);
+    lampara->agregar(base);
     
-    // m_rotacion_base = base->leerPtrMatriz(indice_rotacion_base);
 
-    m_traslacion_brazo_lateral = brazo_lateral->leerPtrMatriz(indice_traslacion_b_lat);
-    
+    m_traslacion_brazo_lateral = brazo_lateral->leerPtrMatriz(indice_traslacion_b_lat); 
+    m_rotacion_cabezal = cabezal->leerPtrMatriz(indice_rotacion_cabezal);               
+    m_scale_bombilla = bombilla->leerPtrMatriz(indice_scale_bombilla);
     agregar(lampara);
-    m_traslacion_base = lampara->leerPtrMatriz(indice_traslacion_base);
+    m_traslacion_base = lampara->leerPtrMatriz(indice_traslacion_base);                 
 
 }
 
 
-unsigned Lampara::leerNumParametros() const{
-    return 2;
+unsigned Lampara::leerNumParametros() const
+{
+    return 4;
 }
 
 void Lampara::actualizarEstadoParametro
@@ -274,29 +251,42 @@ void Lampara::actualizarEstadoParametro
 {
     switch (iParam) 
     {
+     
         case 0: {
-            // Oscilación del brazo de un 0.5
+
             float A = -0.5;
             float B = 0.0;
             *m_traslacion_brazo_lateral = translate(vec3(0.0, A + ((B-A)/2)*(1 + sin((M_PI/2)*t_sec)), 0.0));
+        
             break;
         }
-        case 1: {
-            // *m_rotacion_base = rotate(float(0.5*cos(2*M_PI*t_sec)),vec3{1.0,0.0,0.0});
-            
-            // Osiclación de la figura de un 1.0
+
+
+        case 1: {            
+
+            float angulo = 2*(M_PI/4)*t_sec;
+            *m_rotacion_cabezal = translate(vec3(-0.3, -0.5, 0.0))*rotate(angulo, vec3(0.0, 1.0, 0.0))*translate(vec3(0.3, 0.5, 0.0));
+
+            break;
+        }
+
+        case 2: {
+
+            float A  = 0.75;
+            float B = 1.4;
+            float escala = A + ((B-A)/2)*( 1 + sin((M_PI/2)*t_sec));
+            *m_scale_bombilla = scale (vec3(escala, escala, escala));
+
+            break;
+        }
+
+        case 3:{
+        
             float A = 0.0;
             float B = 1.0;
             *m_traslacion_base = translate(vec3(A + ((B-A)/2)*(1 + sin((M_PI/2)*t_sec)),0.0,0.0));
+
             break;
         }
-        
-
-        // case 2:
-        // break;
-
-        // case 3:
-        // break;
-
     }
 }
