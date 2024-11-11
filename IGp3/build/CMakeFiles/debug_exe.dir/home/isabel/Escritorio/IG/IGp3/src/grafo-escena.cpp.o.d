@@ -426,4 +426,5 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp3/src/grafo-escena.cpp.o: 
  /home/isabel/Escritorio/IG/IGp3/builds/linux/../../materiales/src-cpp/lector-jpg.h \
  /home/isabel/Escritorio/IG/IGp3/src/aplicacion-ig.h \
  /home/isabel/Escritorio/IG/IGp3/src/seleccion.h \
- /home/isabel/Escritorio/IG/IGp3/src/escena.h
+ /home/isabel/Escritorio/IG/IGp3/src/escena.h \
+ /home/isabel/Escritorio/IG/IGp3/src/malla-revol.h
