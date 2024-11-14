@@ -332,6 +332,9 @@ Escena3::Escena3()
    cout << "Creando objetos de la práctica 3." << endl;
 
    objetos.push_back(new Lampara());
+   objetos.push_back(new GrafoEstrellaX(6));
+   objetos.push_back(new GrafoCubos());
+
 }
 
 

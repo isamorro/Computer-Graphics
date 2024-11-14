@@ -330,3 +330,267 @@ bool NodoGrafoEscena::buscarObjeto
    // ni este nodo ni ningún hijo es el buscado: terminar
    return false ;
 }
+
+
+// *********************************************************************
+// EJERCICIOS OPCIONALES PRÁTCICA 3
+
+// EJERCICIO 1
+
+GrafoEstrellaX::GrafoEstrellaX(unsigned n){
+
+   assert (n>1);
+
+   unsigned identificador = 1;
+   float radio  = 1.3f;
+   float angulo = (2*M_PI) / n;
+   float escala_estrella = radio / 0.5f;
+   float escala_cono_radio = 0.14f / 1.3f;
+   float escala_cono_altura = 0.15f / 1.3f;
+
+   ponerNombre("GrafoEstrellax");
+   NodoGrafoEscena *grafo = new NodoGrafoEscena();
+
+   NodoGrafoEscena *estrella = new NodoGrafoEscena();
+   estrella->ponerNombre("nodo de la estrella");
+   estrella->ponerIdentificador(identificador);
+   identificador++;
+   unsigned indice_rotacion = estrella->agregar(rotate(0.0f, vec3(1.0, 0.0, 0.0)));
+   estrella->agregar(scale(vec3(escala_estrella, escala_estrella, escala_estrella)));
+   estrella->agregar(rotate(float(M_PI/2), vec3(0.0, 1.0, 0.0)));
+   estrella->agregar(translate(vec3(-0.5, -0.5, 0.0)));
+   estrella->agregar(new EstrellaZ(2*n));
+
+
+   Cono *cono = new Cono(100, 10);
+   for (int i=0; i < n; i++){
+
+      NodoGrafoEscena *nodo = new NodoGrafoEscena();
+      
+      nodo->ponerNombre("Nodo " + identificador),
+      nodo->ponerIdentificador(identificador);
+      identificador++;
+
+      nodo->agregar(translate(vec3(0.5, 0.5, 0.0)));
+      nodo->agregar(translate(vec3(0.5*cos(angulo*i), 0.5*sin(angulo*i), 0.0)));
+      nodo->agregar(rotate(float(angulo*i) + float(-M_PI/2), vec3(0.0, 0.0, 1.0)));
+      nodo->agregar(scale(vec3(escala_cono_radio, escala_cono_altura, escala_cono_radio)));
+     
+      nodo->agregar(cono);
+      estrella->agregar(nodo);
+   }
+
+   m_rotacion = estrella->leerPtrMatriz(indice_rotacion);
+
+   grafo->agregar(estrella);
+   agregar(grafo);
+
+}
+
+unsigned GrafoEstrellaX::leerNumParametros() const
+{
+    return 1;
+}
+
+void GrafoEstrellaX::actualizarEstadoParametro
+(
+    const unsigned iParam, 
+    const float t_sec    
+)
+{
+    switch (iParam) 
+    {
+     
+        case 0: {            
+
+            float angulo = 2.5*(2*M_PI)*t_sec;
+            *m_rotacion = rotate(angulo, vec3(1.0, 0.0, 0.0));
+
+            break;
+        }
+    }
+}
+
+// EJERCICIO 2
+
+GrafoCubos::GrafoCubos(){
+
+
+   ponerNombre(" GrafoCubos ");
+   NodoGrafoEscena *objeto = new NodoGrafoEscena();
+   
+   unsigned identificador = 1;
+
+// Cubo Central
+
+   NodoGrafoEscena *cuboCentral = new NodoGrafoEscena();
+   cuboCentral->ponerIdentificador(identificador);
+   identificador++;
+
+   cuboCentral->agregar(new CuboColores());
+
+// Rejilla del Cubo Central
+
+   // Rejilla parte de abajo
+   NodoGrafoEscena *rejilla1 = new NodoGrafoEscena();
+   rejilla1->ponerIdentificador(identificador);
+   identificador++;
+   rejilla1->agregar(translate(vec3(-1, -1, -1)));
+   rejilla1->agregar(scale(vec3(2.0, 2.0, 2.0)));
+   rejilla1->agregar(new RejillaY(5, 5));   
+
+   // Rejilla parte de arriba
+   NodoGrafoEscena *rejilla2 = new NodoGrafoEscena();
+   rejilla2->ponerIdentificador(identificador);
+   identificador++;
+   rejilla2->agregar(translate(vec3(-1.0, 1.0, -1.0)));
+   rejilla2->agregar(scale(vec3(2.0, 2.0, 2.0)));
+   rejilla2->agregar(new RejillaY(5,5));
+
+   // Rejilla lateral derecho
+   NodoGrafoEscena *rejilla3 = new NodoGrafoEscena();
+   rejilla3->ponerIdentificador(identificador);
+   identificador++;
+   rejilla3->agregar(rotate(float(M_PI/2), vec3(0.0, 0.0, 1.0)));
+   rejilla3->agregar(translate(vec3(-1.0, -1.0, -1.0)));
+   rejilla3->agregar(scale(vec3(2.0, 2.0, 2.0)));
+   rejilla3->agregar(new RejillaY(5, 5));
+
+   // Rejilla lateral izquierdo
+   NodoGrafoEscena *rejilla4 = new NodoGrafoEscena();
+   rejilla4->ponerIdentificador(identificador);
+   identificador++;
+   rejilla4->agregar(rotate(float(M_PI/2), vec3(0.0, 0.0, 1.0)));
+   rejilla4->agregar(translate(vec3(-1.0, 1.0, -1.0)));
+   rejilla4->agregar(scale(vec3(2.0, 2.0, 2.0)));
+   rejilla4->agregar(new RejillaY(5, 5));
+
+   // Rejilla frontal
+   NodoGrafoEscena *rejilla5 = new NodoGrafoEscena();
+   rejilla5->ponerIdentificador(identificador);
+   identificador++;
+   rejilla5->agregar(rotate(float(M_PI/2), vec3(1.0, 0.0, 0.0)));
+   rejilla5->agregar(translate(vec3(-1.0, 1.0, -1.0)));
+   rejilla5->agregar(scale(vec3(2.0, 2.0, 2.0)));
+   rejilla5->agregar(new RejillaY(5, 5));
+
+   // Rejilla trasera
+   NodoGrafoEscena *rejilla6 = new NodoGrafoEscena();
+   rejilla6->ponerIdentificador(identificador);
+   identificador++;
+   rejilla6->agregar(rotate(float(M_PI/2), vec3(1.0, 0.0, 0.0)));
+   rejilla6->agregar(translate(vec3(-1.0, -1.0, -1.0)));
+   rejilla6->agregar(scale(vec3(2.0, 2.0, 2.0)));
+   rejilla6->agregar(new RejillaY(5, 5));
+
+
+// Cubos laterales
+
+   NodoGrafoEscena *cubo1 = new NodoGrafoEscena();
+   cubo1->ponerIdentificador(identificador);
+   identificador++;
+   cubo1->agregar(translate(vec3(0.0, -1.4, 0.0)));
+   cubo1->agregar(scale(vec3(0.25, 0.4, 0.25)));
+   unsigned ind1 = cubo1->agregar(rotate(0.0f, vec3(0.0, 1.0, 0.0)));
+   cubo1->agregar(new Cubo());
+
+   NodoGrafoEscena *cubo2 = new NodoGrafoEscena();
+   cubo2->ponerIdentificador(identificador);
+   identificador++;
+   cubo2->agregar(translate(vec3(0.0, 1.4, 0.0)));
+   cubo2->agregar(scale(vec3(0.25, 0.4, 0.25)));
+   unsigned ind2 = cubo2->agregar(rotate(0.0f, vec3(0.0, 1.0, 0.0)));
+   cubo2->agregar(new Cubo());
+
+   NodoGrafoEscena *cubo3 = new NodoGrafoEscena();
+   cubo3->ponerIdentificador(identificador);
+   identificador++;
+   cubo3->agregar(translate(vec3(0.0, 0.0, 1.4)));
+   cubo3->agregar(scale(vec3(0.25, 0.25, 0.4)));
+   unsigned ind3 = cubo3->agregar(rotate(0.0f, vec3(0.0, 0.0, 1.0)));
+   cubo3->agregar(new Cubo());  
+
+   NodoGrafoEscena *cubo4 = new NodoGrafoEscena();
+   cubo4->ponerIdentificador(identificador);
+   identificador++;
+   cubo4->agregar(translate(vec3(0.0, 0.0, -1.4)));
+   cubo4->agregar(scale(vec3(0.25, 0.25, 0.4)));
+   unsigned ind4 = cubo4->agregar(rotate(0.0f, vec3(0.0, 0.0, 1.0)));
+   cubo4->agregar(new Cubo());
+
+   NodoGrafoEscena *cubo5 = new NodoGrafoEscena();
+   cubo5->ponerIdentificador(identificador);
+   identificador++;
+   cubo5->agregar(translate(vec3(1.4, 0.0, 0.0)));
+   cubo5->agregar(scale(vec3(0.4, 0.25, 0.25)));
+   unsigned ind5 = cubo5->agregar(rotate(0.0f, vec3(1.0, 0.0, 0.0)));
+   cubo5->agregar(new Cubo());
+
+   NodoGrafoEscena *cubo6 = new NodoGrafoEscena();
+   cubo6->ponerIdentificador(identificador);
+   identificador++;
+   cubo6->agregar(translate(vec3(-1.4, 0.0, 0.0)));
+   cubo6->agregar(scale(vec3(0.4, 0.25, 0.25)));
+   unsigned ind6 = cubo6->agregar(rotate(0.0f, vec3(1.0, 0.0, 0.0)));
+   cubo6->agregar(new Cubo());
+
+   // Agregamos las rejillas al cubo
+
+   cuboCentral->agregar(rejilla1);  // abajo
+   cuboCentral->agregar(rejilla2);  // arriba
+   cuboCentral->agregar(rejilla3);  // derecha
+   cuboCentral->agregar(rejilla4);  // izquierda
+   cuboCentral->agregar(rejilla5);  // frontal
+   cuboCentral->agregar(rejilla6);  // fondo
+
+   // Agregamos cubos 
+
+   objeto->agregar(cubo1);
+   objeto->agregar(cubo2);
+   objeto->agregar(cubo3);
+   objeto->agregar(cubo4);
+   objeto->agregar(cubo5);
+   objeto->agregar(cubo6);
+
+   // Movimientos de los cubos
+
+   m_cubo1 = cubo1->leerPtrMatriz(ind1);
+   m_cubo2 = cubo2->leerPtrMatriz(ind2);
+   m_cubo3 = cubo3->leerPtrMatriz(ind3);
+   m_cubo4 = cubo4->leerPtrMatriz(ind4);
+   m_cubo5 = cubo5->leerPtrMatriz(ind5);
+   m_cubo6 = cubo6->leerPtrMatriz(ind6);
+
+   objeto->agregar(cuboCentral);
+   agregar(objeto);
+}
+
+unsigned GrafoCubos::leerNumParametros() const {
+   return 6;
+} 
+
+void GrafoCubos::actualizarEstadoParametro
+(
+   const unsigned iParam,
+   const float t_sec
+)
+{
+   switch (iParam)
+   {
+      case 0: {
+         
+         float angulo = 2.5*t_sec;
+
+         *m_cubo1 = rotate(angulo, vec3(0.0, 1.0, 0.0));
+         *m_cubo2 = rotate(angulo, vec3(0.0, 1.0, 0.0));
+         
+         *m_cubo3 = rotate(angulo, vec3(0.0, 0.0, 1.0));
+         *m_cubo4 = rotate(angulo, vec3(0.0, 0.0, 1.0));
+
+         *m_cubo5 = rotate(angulo, vec3(1.0, 0.0, 0.0));
+         *m_cubo6 = rotate(angulo, vec3(1.0, 0.0, 0.0));
+
+         break;
+      }
+   }
+}
