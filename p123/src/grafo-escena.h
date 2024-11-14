@@ -94,11 +94,6 @@ class NodoGrafoEscena : public Objeto3D
 
 } ;
 
-// *********************************************************************
-
-
-
-
 #endif // GRAFO_ESCENA_HPP
 
 

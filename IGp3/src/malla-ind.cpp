@@ -362,7 +362,6 @@ EstrellaX::EstrellaX(unsigned int n) : MallaInd ("EstrellaX") {
    // Calculamos los vértices
    for (int i=0; i < num_vertices-1; i++){
 
-      // Interiores
       if (i % 2 == 0) {
 
          vertices.push_back( {centroX,
@@ -370,7 +369,6 @@ EstrellaX::EstrellaX(unsigned int n) : MallaInd ("EstrellaX") {
                               centroZ + radio_exterior*cos(angulo*2*i)});
       }
 
-      // Exteriores
       else {
 
          vertices.push_back( {centroX,
@@ -412,7 +410,6 @@ EstrellaY::EstrellaY(unsigned int n) : MallaInd ("EstrellaY") {
    // Calculamos los vértices
    for (int i=0; i < num_vertices-1; i++){
 
-      // Interiores
       if (i % 2 == 0) {
          // X: x=centro_x+radio*cos(angulo*i)
          // Y: y=centro_y+radio*sin(angulo*i)
@@ -422,7 +419,6 @@ EstrellaY::EstrellaY(unsigned int n) : MallaInd ("EstrellaY") {
                               centroZ + radio_exterior*sin(angulo*2*i)});
       }
 
-      // Exteriores
       else {
 
          vertices.push_back( {centroX + (radio_interior)*cos(angulo*2*i),
@@ -464,7 +460,6 @@ EstrellaZ::EstrellaZ(unsigned int n) : MallaInd ("EstrellaZ") {
    // Calculamos los vértices
    for (int i=0; i < num_vertices-1; i++){
 
-      // Interiores
       if (i % 2 == 0) {
          // X: x=centro_x+radio*cos(angulo*i)
          // Y: y=centro_y+radio*sin(angulo*i)
@@ -474,7 +469,6 @@ EstrellaZ::EstrellaZ(unsigned int n) : MallaInd ("EstrellaZ") {
                               centroZ});
       }
 
-      // Exteriores
       else {
 
          vertices.push_back( {centroX + (radio_interior)*cos(angulo*2*i),

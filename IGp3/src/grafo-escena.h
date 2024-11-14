@@ -95,9 +95,31 @@ class NodoGrafoEscena : public Objeto3D
 } ;
 
 // *********************************************************************
+// EJERCICIOS OPCIONALES PRÁTCICA 3
 
+// EJERCICIO 1 (Sin terminar)
 
+class GrafoEstrellaX : public NodoGrafoEscena {
 
+   protected:
+
+      mat4 *m_rotacion = nullptr;
+
+   public:
+   
+      GrafoEstrellaX(unsigned n);
+
+      // Redefinición de métodos de Objeto3D
+
+      unsigned leerNumParametros() const;
+
+      virtual void actualizarEstadoParametro
+      ( 
+         const unsigned iParam, 
+         const float t_sec 
+      );
+
+};
 
 #endif // GRAFO_ESCENA_HPP
 

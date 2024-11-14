@@ -332,8 +332,81 @@ bool NodoGrafoEscena::buscarObjeto
 }
 
 
+// *********************************************************************
+// EJERCICIOS OPCIONALES PRÁTCICA 3
+
+// EJERCICIO 1
+
+GrafoEstrellaX::GrafoEstrellaX(unsigned n){
+
+   assert (n>1);
+
+   unsigned identificador = 1;
+   float radio  = 1.3f;
+   float angulo = (2*M_PI) / n;
+   float escala_estrella = radio / 0.5f;
+   float escala_cono_radio = 0.14f / 1.3f;
+   float escala_cono_altura = 0.15f / 1.3f;
+
+   ponerNombre("GrafoEstrellax");
+   NodoGrafoEscena *grafo = new NodoGrafoEscena();
+
+   NodoGrafoEscena *estrella = new NodoGrafoEscena();
+   estrella->ponerNombre("nodo de la estrella");
+   estrella->ponerIdentificador(identificador);
+   identificador++;
+   unsigned indice_rotacion = estrella->agregar(rotate(0.0f, vec3(1.0, 0.0, 0.0)));
+   estrella->agregar(scale(vec3(escala_estrella, escala_estrella, escala_estrella)));
+   estrella->agregar(rotate(float(M_PI/2), vec3(0.0, 1.0, 0.0)));
+   estrella->agregar(translate(vec3(-0.5, -0.5, 0.0)));
+   estrella->agregar(new EstrellaZ(2*n));
 
 
+   Cono *cono = new Cono(100, 10);
+   for (int i=0; i < n; i++){
 
+      NodoGrafoEscena *nodo = new NodoGrafoEscena();
+      
+      nodo->ponerNombre("Nodo " + identificador),
+      nodo->ponerIdentificador(identificador);
+      identificador++;
 
+      nodo->agregar(translate(vec3(0.5, 0.5, 0.0)));
+      nodo->agregar(translate(vec3(0.5*cos(angulo*i), 0.5*sin(angulo*i), 0.0)));
+      nodo->agregar(rotate(sin(angulo*i) - float(M_PI/2), vec3(0.0, 0.0, 1.0)));
+      nodo->agregar(scale(vec3(escala_cono_radio, escala_cono_altura, escala_cono_radio)));
+     
+      nodo->agregar(cono);
+      estrella->agregar(nodo);
+   }
 
+   m_rotacion = estrella->leerPtrMatriz(indice_rotacion);
+
+   grafo->agregar(estrella);
+   agregar(grafo);
+
+}
+
+unsigned GrafoEstrellaX::leerNumParametros() const
+{
+    return 1;
+}
+
+void GrafoEstrellaX::actualizarEstadoParametro
+(
+    const unsigned iParam, 
+    const float t_sec    
+)
+{
+    switch (iParam) 
+    {
+     
+        case 0: {            
+
+            float angulo = 2.5*(2*M_PI)*t_sec;
+            *m_rotacion = rotate(angulo, vec3(1.0, 0.0, 0.0));
+
+            break;
+        }
+    }
+}
