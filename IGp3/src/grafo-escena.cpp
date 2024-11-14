@@ -373,7 +373,7 @@ GrafoEstrellaX::GrafoEstrellaX(unsigned n){
 
       nodo->agregar(translate(vec3(0.5, 0.5, 0.0)));
       nodo->agregar(translate(vec3(0.5*cos(angulo*i), 0.5*sin(angulo*i), 0.0)));
-      nodo->agregar(rotate(sin(angulo*i) - float(M_PI/2), vec3(0.0, 0.0, 1.0)));
+      nodo->agregar(rotate(float(angulo*i) + float(-M_PI/2), vec3(0.0, 0.0, 1.0)));
       nodo->agregar(scale(vec3(escala_cono_radio, escala_cono_altura, escala_cono_radio)));
      
       nodo->agregar(cono);
