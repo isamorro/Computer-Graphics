@@ -680,8 +680,8 @@ RejillaY::RejillaY
 : MallaInd ("RejillaY por mallas indexadas") {
 
    float y = 0.0f;
-   float dist_x = 1.0 / n;
-   float dist_z = 1.0 / m;
+   float dist_x = 1.0 / (n-1);
+   float dist_z = 1.0 / (m-1);
 
    for (int i=0; i < n; i++){
       for (int j=0; j < m; j++){

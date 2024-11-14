@@ -333,6 +333,7 @@ Escena3::Escena3()
 
    objetos.push_back(new Lampara());
    objetos.push_back(new GrafoEstrellaX(6));
+   objetos.push_back(new GrafoCubos());
 
 }
 

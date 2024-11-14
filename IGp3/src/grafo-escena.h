@@ -107,6 +107,8 @@ class GrafoEstrellaX : public NodoGrafoEscena {
 
    public:
    
+      // Constructor
+
       GrafoEstrellaX(unsigned n);
 
       // Redefinición de métodos de Objeto3D
@@ -121,6 +123,36 @@ class GrafoEstrellaX : public NodoGrafoEscena {
 
 };
 
-#endif // GRAFO_ESCENA_HPP
+// EJERCICIO 2
 
+class GrafoCubos : public NodoGrafoEscena {
+
+   protected:
+
+      mat4 *m_cubo1 = nullptr;
+      mat4 *m_cubo2 = nullptr;
+      mat4 *m_cubo3 = nullptr;
+      mat4 *m_cubo4 = nullptr;
+      mat4 *m_cubo5 = nullptr;
+      mat4 *m_cubo6 = nullptr;
+
+   public:
+
+      // Constructor
+
+      GrafoCubos();
+
+      // Redefinición de métodos de Objeto3D
+
+      unsigned leerNumParametros() const;
+
+      virtual void actualizarEstadoParametro
+      ( 
+         const unsigned iParam, 
+         const float t_sec 
+      );
+
+};
+
+#endif // GRAFO_ESCENA_HPP
 
