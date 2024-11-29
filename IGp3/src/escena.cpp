@@ -12,7 +12,6 @@
 #include "modelo-jer.h"
 
 
-
 // -----------------------------------------------------------------------------------------------
 
 Escena::Escena()
@@ -290,6 +289,7 @@ Escena1::Escena1()
    objetos.push_back(new MallaTriangulo());
    objetos.push_back(new MallaCuadrado());
    objetos.push_back(new MallaPiramide2());
+
 }
 
 // -------------------------------------------------------------------------
@@ -317,6 +317,8 @@ Escena2::Escena2(){
    objetos.push_back(new PiramideEstrellaZ(10));
    objetos.push_back(new RejillaY(10, 10));
    objetos.push_back(new MallaTorre(5));
+
+
 }
 
 

@@ -11,6 +11,7 @@
 #include "escena.h"
 #include "modelo-jer.h"
 
+#include "examen-ec-p123.h"
 
 
 // -----------------------------------------------------------------------------------------------
@@ -276,20 +277,24 @@ Escena1::Escena1()
    using namespace std ;
    cout << "Creando objetos de la práctica 1." << endl ;
 
+   objetos.push_back(new Ejercicio1());
+   objetos.push_back(new Ejercicio2(2));
+
    // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
-   objetos.push_back(new Cubo());
-   objetos.push_back(new Tetraedro());
-   objetos.push_back(new CuboColores());
-   objetos.push_back(new EstrellaZ(5));
+   // objetos.push_back(new Cubo());
+   // objetos.push_back(new Tetraedro());
+   // objetos.push_back(new CuboColores());
+   // objetos.push_back(new EstrellaZ(5));
 
 
-   // ----------------------EJERCICIOS OPCIONALES------------------------------
-   objetos.push_back(new EstrellaY(7));
-   objetos.push_back(new EstrellaX(5));
-   objetos.push_back(new CasaX());
-   objetos.push_back(new MallaTriangulo());
-   objetos.push_back(new MallaCuadrado());
-   objetos.push_back(new MallaPiramide2());
+   // // ----------------------EJERCICIOS OPCIONALES------------------------------
+   // objetos.push_back(new EstrellaY(7));
+   // objetos.push_back(new EstrellaX(5));
+   // objetos.push_back(new CasaX());
+   // objetos.push_back(new MallaTriangulo());
+   // objetos.push_back(new MallaCuadrado());
+   // objetos.push_back(new MallaPiramide2());
+
 }
 
 // -------------------------------------------------------------------------
@@ -306,17 +311,19 @@ Escena2::Escena2(){
    int nperfiles = 100; // Número de perfiles
    int nveper = 10; // Número de vértices por perfil
    
-   objetos.push_back(new MallaRevolPLY("../plys/peon.ply",nperfiles));
+   // objetos.push_back(new MallaRevolPLY("../plys/peon.ply",nperfiles));
 
-   // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
-   objetos.push_back(new Cilidndro(nveper,nperfiles));
-   objetos.push_back(new Cono(nveper, nperfiles));
-   objetos.push_back(new Esfera(nveper, nperfiles));
+   // // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
+   // objetos.push_back(new Cilidndro(nveper,nperfiles));
+   // objetos.push_back(new Cono(nveper, nperfiles));
+   // objetos.push_back(new Esfera(nveper, nperfiles));
 
-   // ----------------------EJERCICIOS OPCIONALES------------------------------
-   objetos.push_back(new PiramideEstrellaZ(10));
-   objetos.push_back(new RejillaY(10, 10));
-   objetos.push_back(new MallaTorre(5));
+   // // ----------------------EJERCICIOS OPCIONALES------------------------------
+   // objetos.push_back(new PiramideEstrellaZ(10));
+   // objetos.push_back(new RejillaY(10, 10));
+   // objetos.push_back(new MallaTorre(5));
+
+
 }
 
 
@@ -331,9 +338,11 @@ Escena3::Escena3()
    using namespace std;
    cout << "Creando objetos de la práctica 3." << endl;
 
-   objetos.push_back(new Lampara());
-   objetos.push_back(new GrafoEstrellaX(6));
-   objetos.push_back(new GrafoCubos());
+   objetos.push_back(new Ejercicio3(0.25, 1.5));
+
+   // objetos.push_back(new Lampara());
+   // objetos.push_back(new GrafoEstrellaX(6));
+   // objetos.push_back(new GrafoCubos());
 
 }
 

@@ -9,6 +9,8 @@
 #include "seleccion.h"   // para 'ColorDesdeIdent' 
 
 
+using namespace glm;
+
 // *****************************************************************************
 // funciones auxiliares
 

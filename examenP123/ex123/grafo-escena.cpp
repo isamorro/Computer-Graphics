@@ -552,7 +552,7 @@ GrafoCubos::GrafoCubos(){
    objeto->agregar(cubo5);
    objeto->agregar(cubo6);
 
-   // Movimientos de los cubos
+   // Movimientos de los cubosy to
 
    m_cubo1 = cubo1->leerPtrMatriz(ind1);
    m_cubo2 = cubo2->leerPtrMatriz(ind2);

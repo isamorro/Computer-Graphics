@@ -6,6 +6,7 @@
 #include "malla-revol.h"
 
 using namespace std ;
+using namespace glm;
 
 // *****************************************************************************
 
@@ -171,6 +172,4 @@ Esfera::Esfera
 
    inicializar(perfil, nperfiles);
 }
-
-
 
