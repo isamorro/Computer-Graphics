@@ -79,6 +79,10 @@ void NodoGrafoEscena::visualizarGL(  )
    Cauce *          cauce           = aplicacionIG->cauce ;           assert( cauce != nullptr );
    PilaMateriales * pila_materiales = aplicacionIG->pila_materiales ; assert( pila_materiales != nullptr );
 
+   // Práctica 4: al inicio, hacer 'push' de la pila de materiales (guarda material actual en la pila)
+   // Diapositiva 211 tema3
+   pila_materiales->push(); 
+
    // Práctica 3: implementar la visualización del nodo
 
    // 1. Si el objeto tiene un color asignado (se comprueba con 'tieneColor')
@@ -109,6 +113,12 @@ void NodoGrafoEscena::visualizarGL(  )
          case TipoEntNGE::transformacion:
             cauce->compMM(*(entradas[i].matriz));
             break;
+
+         // Práctica 4: si una entrada es de tipo material, activarlo usando a pila de materiales
+         // Diapositiva 211 tema3
+         case TipoEntNGE::material:
+         if (aplicacionIG->iluminacion)
+            pila_materiales->activar(entradas[i].material);
       }
    }
 
@@ -124,14 +134,10 @@ void NodoGrafoEscena::visualizarGL(  )
 
 
    // COMPLETAR: práctica 4: añadir gestión de los materiales cuando la iluminación está activada    
-   //
-   // Si 'apl->iluminacion' es 'true', se deben de gestionar los materiales:
-   //
-   //   1. al inicio, hacer 'push' de la pila de materiales (guarda material actual en la pila)
-   //   2. si una entrada es de tipo material, activarlo usando a pila de materiales
-   //   3. al finalizar, hacer 'pop' de la pila de materiales (restaura el material activo al inicio)
-
-   // ......
+   // Si 'apl->iluminacion' es 'true', se deben de gestionar los materiales
+   // Al finalizar, hacer 'pop' de la pila de materiales (restaura el material activo al inicio)
+   // Diapositiva 211 tema3
+   pila_materiales->pop();
 
 
 }

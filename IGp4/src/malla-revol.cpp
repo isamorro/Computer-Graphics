@@ -24,13 +24,13 @@ void MallaRevol::inicializar
    // Escribir el algoritmo de creación de una malla indexada por revolución de un 
    // perfil, según se describe en el guion de prácticas.
 
-   //Partimos de las tablas de vértices y triángulos vacías
+   // Partimos de las tablas de vértices y triángulos vacías
    vertices=std::vector<glm::vec3>();
    triangulos=std::vector<glm::uvec3>();
    unsigned int m=perfil.size();
    unsigned int n=num_copias;
 
-   //Completamos vértices
+   // Completamos vértices
    for(unsigned int i=0; i<n; i++){
       for(unsigned int j=0; j<m; j++){
          //obtener las coordenadas del punto perfil[j] girado 2pi*i/(n-1) sobre Y
@@ -53,6 +53,9 @@ void MallaRevol::inicializar
          triangulos.push_back({k, k+m+1, k+1});
       }
    }
+
+   // Práctica 4: 
+
 }
 
 // -----------------------------------------------------------------------------

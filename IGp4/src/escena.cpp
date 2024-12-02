@@ -20,10 +20,10 @@ Escena::Escena()
    // 
    // Se debe dar un valor inicial adecuado a las variables de instancia 'col_fuentes' y 'material_ini'
    //
-   // - Para 'col_fuentes', se usará una instancia de 'Col2Fuentes'
-   // - Se deben de elegir los parámetros del material.
-   //
-   // ...
+   // Para 'col_fuentes', se usará una instancia de 'Col2Fuentes'
+   col_fuentes = new Col2Fuentes();
+   // Se deben de elegir los parámetros del material.
+   material_ini = new Material(); // de esta forma usa los materiales por defecto, ok??
 
 
    // COMPLETAR: práctica 5: añadir varias cámaras perspectiva y ortogonales al vector de cámaras de la escena
@@ -104,12 +104,14 @@ void Escena::visualizarGL( )
 
    if ( aplicacionIG->iluminacion )
    {
-      // COMPLETAR: práctica 4: activar evaluación del MIL (y desactivar texturas)
-      //
-      // * habilitar evaluación del MIL en el cauce (fijarEvalMIL)
-      // * activar la colección de fuentes de la escena
-      // * activar el material inicial (usando 'pila_materiales')
-      // ....
+      // Práctica 4: activar evaluación del MIL (y desactivar texturas)
+      
+      // habilitar evaluación del MIL en el cauce (fijarEvalMIL)
+      cauce->fijarEvalMIL( true );
+      // activar la colección de fuentes de la escena
+      col_fuentes->activar();
+      // activar el material inicial (usando 'pila_materiales')
+      material_ini->activar();
 
    }
    else // si la iluminación no está activada, deshabilitar MIL y texturas
@@ -341,12 +343,17 @@ Escena3::Escena3()
 
 
 // ----------------------------------------------------------------------------
-// COMPLETAR: práctica 4: escribir implementación del constructor de 'Escena4'. 
+// Práctica 4: escribir implementación del constructor de 'Escena4'. 
 //
 // Añadir la implementación del constructor de la clase Escena4 para construir
 // los objetos que se indican en el guion de la práctica 4
-// .......
 
+Escena4::Escena4(){
+
+   using namespace std;
+   cout << "Creando objetos de la práctica 4." << endl;
+
+}
 
 
 // ----------------------------------------------------------------------

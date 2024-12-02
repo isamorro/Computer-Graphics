@@ -12,14 +12,15 @@ const bool trazam = false ;
 
 Textura::Textura( const std::string & nombreArchivoJPG )
 {
-   // COMPLETAR: práctica 4: cargar imagen de textura
+   // Práctica 4: cargar imagen de textura
    // (las variables de instancia están inicializadas en la decl. de la clase)
    // El nombre del archivo debe convertirse a una cadena (char *) acabada en 
    // 0 tradicional en C. Para eso debe usarse el método 'c_str' de la clase 
    // 'std::string'.
    // El nombre del archivo debe ir sin el 'path', la función 'LeerArchivoJPG' lo 
    // busca en 'materiales/imgs' y si no está se busca en 'archivos-alumno'
-   // .....
+
+   imagen = LeerArchivoJPEG(nombreArchivoJPG.c_str(), ancho, alto);
 
 }
 
@@ -32,6 +33,9 @@ void Textura::enviar()
    // COMPLETAR: práctica 4: enviar la imagen de textura a la GPU
    // y configurar parámetros de la textura (glTexParameter)
    // .......
+
+   // Se envia una vez
+   enviada = true;
 
 }
 
@@ -57,8 +61,10 @@ void Textura::activar(  )
    assert( aplicacionIG != nullptr );
    Cauce * cauce = aplicacionIG->cauce ; assert( cauce != nullptr );
 
-   // COMPLETAR: práctica 4: enviar la textura a la GPU (solo la primera vez) y activarla
-   // .......
+   // Práctica 4: enviar la textura a la GPU (solo la primera vez) y activarla
+   if (!enviada) enviar();
+   cauce->fijarEvalText(true, ident_textura);
+   cauce->fijarTipoGCT(modo_gen_ct, coefs_s, coefs_t);
 
 }
 // *********************************************************************
@@ -115,8 +121,9 @@ void Material::activar( )
    assert( aplicacionIG != nullptr );
    Cauce * cauce = aplicacionIG->cauce ; assert( cauce != nullptr );
 
-   // COMPLETAR: práctica 4: activar un material
-   // .....
+   // Práctica 4: activar un material
+   if (textura != nullptr) textura->activar();
+   cauce->fijarParamsMIL(k_amb, k_dif, k_pse, exp_pse);
 
 }
 //**********************************************************************
