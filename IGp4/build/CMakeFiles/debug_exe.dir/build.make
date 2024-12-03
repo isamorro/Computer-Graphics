@@ -167,10 +167,24 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s
 
+CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o: CMakeFiles/debug_exe.dir/flags.make
+CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp
+CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp
+
+CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp > CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
+
+CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
+
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/main.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/main.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.s: cmake_fo
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.s: cma
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.s: c
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.s: cm
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.s: cmak
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.s: cma
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o: /home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.s: cma
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o: /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o -c /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o: /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o -c /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.c
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o: /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o -c /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-au
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o: /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o -c /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lecto
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o: CMakeFiles/debug_exe.dir/flags.make
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o: /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o: CMakeFiles/debug_exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o -MF CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o.d -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o -c /home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp
 
 CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.i: cmake_force
@@ -358,6 +372,7 @@ debug_exe_OBJECTS = \
 "CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.o" \
 "CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o" \
 "CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o" \
+"CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o" \
 "CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o" \
 "CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o" \
 "CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o" \
@@ -382,6 +397,7 @@ debug_exe_EXTERNAL_OBJECTS =
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.o
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o
+/home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o
@@ -400,7 +416,7 @@ debug_exe_EXTERNAL_OBJECTS =
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: /usr/lib/x86_64-linux-gnu/libGLX.so
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 /home/isabel/Escritorio/IG/IGp4/bin/debug_exe: CMakeFiles/debug_exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable /home/isabel/Escritorio/IG/IGp4/bin/debug_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isabel/Escritorio/IG/IGp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable /home/isabel/Escritorio/IG/IGp4/bin/debug_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/debug_exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

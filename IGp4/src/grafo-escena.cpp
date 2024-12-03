@@ -80,7 +80,7 @@ void NodoGrafoEscena::visualizarGL(  )
    PilaMateriales * pila_materiales = aplicacionIG->pila_materiales ; assert( pila_materiales != nullptr );
 
    // Práctica 4: al inicio, hacer 'push' de la pila de materiales (guarda material actual en la pila)
-   // Diapositiva 211 tema3
+   // Diapositiva 211 tema 3
    pila_materiales->push(); 
 
    // Práctica 3: implementar la visualización del nodo
@@ -115,7 +115,7 @@ void NodoGrafoEscena::visualizarGL(  )
             break;
 
          // Práctica 4: si una entrada es de tipo material, activarlo usando a pila de materiales
-         // Diapositiva 211 tema3
+         // Diapositiva 211 tema 3
          case TipoEntNGE::material:
          if (aplicacionIG->iluminacion)
             pila_materiales->activar(entradas[i].material);
@@ -133,10 +133,9 @@ void NodoGrafoEscena::visualizarGL(  )
    }
 
 
-   // COMPLETAR: práctica 4: añadir gestión de los materiales cuando la iluminación está activada    
-   // Si 'apl->iluminacion' es 'true', se deben de gestionar los materiales
+   // Práctica 4: añadir gestión de los materiales cuando la iluminación está activada    
    // Al finalizar, hacer 'pop' de la pila de materiales (restaura el material activo al inicio)
-   // Diapositiva 211 tema3
+   // Diapositiva 211 tema 3
    pila_materiales->pop();
 
 
@@ -195,18 +194,30 @@ void NodoGrafoEscena::visualizarNormalesGL(  )
    Cauce * cauce = aplicacionIG->cauce; assert( cauce != nullptr );
   
 
-   // COMPLETAR: práctica 4: visualizar las normales del nodo del grafo de escena
-   //
+   // Práctica 4: visualizar las normales del nodo del grafo de escena
    // Este método hace un recorrido de las entradas del nodo, parecido a 'visualizarGL', teniendo 
    // en cuenta estos puntos:
-   //
-   // - usar push/pop de la matriz de modelado al inicio/fin (al igual que en visualizatGL)
-   // - recorrer las entradas, llamando recursivamente a 'visualizarNormalesGL' en los nodos u objetos hijos
-   // - ignorar el color o identificador del nodo (se supone que el color ya está prefijado antes de la llamada)
-   // - ignorar las entradas de tipo material, y la gestión de materiales (se usa sin iluminación)
 
-   // .......
+   // usar push/pop de la matriz de modelado al inicio/fin (al igual que en visualizatGL)
+   cauce->pushMM();
 
+   // recorrer las entradas, llamando recursivamente a 'visualizarNormalesGL' en los nodos u objetos hijos
+   // ignorar las entradas de tipo material, y la gestión de materiales (se usa sin iluminación)
+   // ignorar el color o identificador del nodo (se supone que el color ya está prefijado antes de la llamada)
+   for (int i=0; i < entradas.size(); i++){
+      switch (entradas[i].tipo)
+      {
+         case TipoEntNGE::objeto:
+            entradas[i].objeto->visualizarNormalesGL();
+            break;
+         
+         case TipoEntNGE::transformacion:
+            cauce->compMM(*entradas[i].matriz);
+            break;
+      }
+   }
+   
+   cauce->popMM();
 }
 
 // -----------------------------------------------------------------------------

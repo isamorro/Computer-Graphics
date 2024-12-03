@@ -56,10 +56,8 @@ AplicacionIG::AplicacionIG()
    // Práctica 3: añadir escena de la práctica 3
    escenas.push_back( new Escena3() );
 
-
    // Práctica 4: añadir escena de la práctica 4
    escenas.push_back( new Escena4() );
-
 
    // COMPLETAR: práctica 5: añadir escena de la práctica 5
    //

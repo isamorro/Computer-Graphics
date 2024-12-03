@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o.d"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o.d"
+  "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o"
+  "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o.d"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o.d"
   "CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o"

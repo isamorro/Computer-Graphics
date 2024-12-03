@@ -466,6 +466,33 @@ home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s
 .PHONY : home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s
 
+home/isabel/Escritorio/IG/IGp4/src/latapeones.o: home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.o
+
+# target to build an object file
+home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
+
+home/isabel/Escritorio/IG/IGp4/src/latapeones.i: home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.i
+
+# target to preprocess a source file
+home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
+
+home/isabel/Escritorio/IG/IGp4/src/latapeones.s: home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.s
+
+# target to generate assembly for a file
+home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
+
 home/isabel/Escritorio/IG/IGp4/src/main.o: home/isabel/Escritorio/IG/IGp4/src/main.cpp.o
 .PHONY : home/isabel/Escritorio/IG/IGp4/src/main.o
 
@@ -728,6 +755,9 @@ help:
 	@echo "... home/isabel/Escritorio/IG/IGp4/src/grafo-escena.o"
 	@echo "... home/isabel/Escritorio/IG/IGp4/src/grafo-escena.i"
 	@echo "... home/isabel/Escritorio/IG/IGp4/src/grafo-escena.s"
+	@echo "... home/isabel/Escritorio/IG/IGp4/src/latapeones.o"
+	@echo "... home/isabel/Escritorio/IG/IGp4/src/latapeones.i"
+	@echo "... home/isabel/Escritorio/IG/IGp4/src/latapeones.s"
 	@echo "... home/isabel/Escritorio/IG/IGp4/src/main.o"
 	@echo "... home/isabel/Escritorio/IG/IGp4/src/main.i"
 	@echo "... home/isabel/Escritorio/IG/IGp4/src/main.s"

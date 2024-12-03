@@ -19,8 +19,50 @@ void MallaRevol::inicializar
 )
 {
    using namespace glm ;
+
+// Práctica 4: sección 4.6.2.1 
+
+   // calculamos m_1..m_n-2
+   vector<vec3> vec_m;
+   for (int i = 0; i < perfil.size() - 1; i++){
+
+      float v1 = (perfil[i+i] - perfil[i])[0];
+      float v2 = (perfil[i+i] - perfil[i])[1];
+
+      vec3 m_aux (vec3(v2, -v1, 0.0f)); // rotado 90 grados
+      if (length(m_aux) != 0.0) m_aux = normalize(m_aux); // normalizado
+      vec_m.push_back(m_aux);
+   }
+   // calculamos las normales de los vectores n_0..n_n-1
+   vector<vec3> vec_n;
+   vec_n.push_back(vec_m[0]);
+   for (int i = 1; i < perfil.size() - 1; i++) 
+      vec_n.push_back(normalize(vec_m[i-1] + vec_m[i]));
+   vec_n.push_back(vec_m[perfil.size()-2]);
+
+
+// Práctica 4: sección 4.6.2.2
+
+   // cálculo de las coordenadas de textura de los vértices
    
-   // Práctica 2: implementar algoritmo de creación de malla de revolución
+   vector<float> d;
+   for (int i = 0; i < perfil.size()-1; i++)
+      d.push_back(sqrt(length(perfil[i+1] - perfil[i])));
+   
+   vector<float> suma_numerador;
+   suma_numerador.push_back(0.0f);
+   for (int i=1; i < perfil.size(); i++)
+      suma_numerador.push_back(suma_numerador[i-1] + d[i-1]);
+   float suma_denominador = suma_numerador[perfil.size()-1];
+
+   vector<float> t;
+   t.push_back(0.0f);
+   for (int i=1; i < perfil.size(); i++)
+      t.push_back(suma_numerador[i]/suma_denominador);
+
+
+// Práctica 2: implementar algoritmo de creación de malla de revolución
+
    // Escribir el algoritmo de creación de una malla indexada por revolución de un 
    // perfil, según se describe en el guion de prácticas.
 
@@ -33,6 +75,7 @@ void MallaRevol::inicializar
    // Completamos vértices
    for(unsigned int i=0; i<n; i++){
       for(unsigned int j=0; j<m; j++){
+         
          //obtener las coordenadas del punto perfil[j] girado 2pi*i/(n-1) sobre Y
          glm::vec3 q,p_j=perfil[j];
          float c=cos(float(2*M_PI*i)/(n-1));
@@ -42,6 +85,17 @@ void MallaRevol::inicializar
          q[2]=-s*p_j[0]+c*p_j[2];
 
          vertices.push_back(q);
+
+         // Práctica 4: añadimos normales (sección 4.6..2.1)
+         vec3 aux = vec3(vec_n[j][0] * cos(float(2*M_PI*i)/(n-1)), 
+                         vec_n[j][1], 
+                         -vec_n[j][0] * sin(float(2*M_PI*i)/(n-1)));
+         if (length(aux) != 0.0) normalize(aux);
+         nor_ver.push_back(aux);
+
+         // Práctica 4: añadimos coordenadas de texturas (sección 4.6.2.2)
+         cc_tt_ver.push_back({float(i) / (n -1), 1 - t[j]});
+
       }
    }
 
@@ -54,7 +108,9 @@ void MallaRevol::inicializar
       }
    }
 
-   // Práctica 4: 
+// Práctica 4
+
+
 
 }
 

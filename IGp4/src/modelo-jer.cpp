@@ -118,12 +118,10 @@ PrismaRectangular::PrismaRectangular
 Lampara::Lampara()
 {
 
-
     unsigned identificador = 1;
     
     ponerNombre("Lampara");
     NodoGrafoEscena *lampara = new NodoGrafoEscena();
-
 
 //// BASE de la lámpara
 
@@ -144,8 +142,12 @@ Lampara::Lampara()
     brazo_inferior->ponerIdentificador(identificador);
     identificador++;
 
-    brazo_inferior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+    // brazo_inferior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
     brazo_inferior->agregar(translate(vec3(0.275, 0.25, 0.125)));
+    
+    TexturaXY *textMadera = new TexturaXY("text-madera.jpg");
+    brazo_inferior->agregar(new Material (textMadera, 0.5, 0.6, 0.5, 50.0));
+    
     brazo_inferior->agregar(new PrismaRectangular(1, 0.25, 0.25));
 
 //// BRAZO SUPERIOR de la lámpara
@@ -155,7 +157,9 @@ Lampara::Lampara()
     brazo_superior->ponerIdentificador(identificador);
     identificador++;
 
-    brazo_superior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+    // brazo_superior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+
+    brazo_inferior->agregar(new Material (textMadera, 0.5, 0.6, 0.5, 50.0));
     brazo_superior->agregar(new PrismaRectangular(2, 0.25, 0.25));
 
 //// BRAZO LATERAL de la lámpara

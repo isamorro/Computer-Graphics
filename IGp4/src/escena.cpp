@@ -10,6 +10,7 @@
 #include "materiales-luces.h"
 #include "escena.h"
 #include "modelo-jer.h"
+#include "latapeones.h"
 
 
 // -----------------------------------------------------------------------------------------------
@@ -202,17 +203,17 @@ void Escena::visualizarNormales(  )
    assert( aplicacionIG != nullptr );
    Cauce * cauce = aplicacionIG->cauce ; assert( cauce != nullptr );
 
-   // COMPLETAR: práctica 4: visualizar normales del objeto actual de la escena 
-   //
-   // Este código debe dar estos pasos:
-   //
+   // Práctica 4: visualizar normales del objeto actual de la escena 
    // 1. Configurar el cauce de la forma adecuada, es decir:
    //      * Desactivar la iluminación (con 'fijarEvalMIL')
+   cauce->fijarEvalMIL(false);
    //      * Desactivar el uso de texturas (con 'fijarEvalText')
+   cauce->fijarEvalText(false);
    //      * fijar el color (con 'fijarColor') 
-   // 2. Visualizar las normales del objeto actual de la escena (con el método 'visualizarNormalesGL')
+   cauce->fijarColor(1.0, 1.0, 1.0);
 
-   // ......
+   // 2. Visualizar las normales del objeto actual de la escena (con el método 'visualizarNormalesGL')
+   objetoActual()->visualizarNormalesGL();
 
 }
 
@@ -308,7 +309,7 @@ Escena2::Escena2(){
    int nperfiles = 100; // Número de perfiles
    int nveper = 10; // Número de vértices por perfil
    
-   objetos.push_back(new MallaRevolPLY("../plys/peon.ply",nperfiles));
+   objetos.push_back(new MallaRevolPLY("peon.ply",nperfiles));
 
    // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
    objetos.push_back(new Cilidndro(nveper,nperfiles));
@@ -352,6 +353,8 @@ Escena4::Escena4(){
 
    using namespace std;
    cout << "Creando objetos de la práctica 4." << endl;
+
+   objetos.push_back(new LataPeones());
 
 }
 

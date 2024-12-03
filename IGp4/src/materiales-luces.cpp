@@ -30,9 +30,36 @@ Textura::Textura( const std::string & nombreArchivoJPG )
 
 void Textura::enviar()
 {
-   // COMPLETAR: práctica 4: enviar la imagen de textura a la GPU
+   // Práctica 4: enviar la imagen de textura a la GPU
    // y configurar parámetros de la textura (glTexParameter)
-   // .......
+   // Tema 3 diapositivas 169 - 175
+
+   // Crear o generar un nuevo nombre de textura único
+   glGenTextures(1, &ident_textura);
+
+   // activa textura con identificador GL_TEXTURE0
+   glActiveTexture(GL_TEXTURE0);
+
+   // activa textura con identificador ident_textura
+   glBindTexture(GL_TEXTURE_2D, ident_textura);
+
+   // copia de texels hacia la GPU
+   glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, ancho, alto, 0, GL_RGB, GL_UNSIGNED_BYTE, imagen);
+
+   // generar mipmaps
+   glGenerateMipmap(GL_TEXTURE_2D);
+
+   // selección de texels para texturas cercanas (maximizadas)
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+   // selección de texels para texturas lejanas (minimizadas)
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
+
+   // selección de texels con coord. de textura fuera de rango
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
    // Se envia una vez
    enviada = true;
@@ -52,10 +79,23 @@ Textura::~Textura( )
    cout << "hecho (no hecho!)" << endl << flush ;
 }
 
+// Práctica 4
+TexturaXY::TexturaXY(const std::string &nom) : Textura(nom) {
+   modo_gen_ct = mgct_coords_objeto;
+}
+
+// Práctica 4
+TexturaXZ::TexturaXZ(const std::string &nom) : Textura(nom) {
+   modo_gen_ct = mgct_coords_objeto;
+
+   coefs_t[1] = 0.0;
+   coefs_t[2] = 1.0;
+}
+
 //----------------------------------------------------------------------
 // por ahora, se asume la unidad de texturas #0
 
-void Textura::activar(  )
+void Textura::activar()
 {
    using namespace std ;
    assert( aplicacionIG != nullptr );
@@ -122,6 +162,10 @@ void Material::activar( )
    Cauce * cauce = aplicacionIG->cauce ; assert( cauce != nullptr );
 
    // Práctica 4: activar un material
+   // la activación debe dar error si se especifica valor nulo o muy bajo de exponente 
+   // de la componente pseudo-especular (u_mil_exp), en general se debe usar un valor no
+   // inferior a la unidad
+   assert (exp_pse < 1);
    if (textura != nullptr) textura->activar();
    cauce->fijarParamsMIL(k_amb, k_dif, k_pse, exp_pse);
 
@@ -188,10 +232,24 @@ void ColFuentesLuz::activar( )
    assert( aplicacionIG != nullptr );
    Cauce * cauce = aplicacionIG->cauce ; assert( cauce != nullptr );
 
-   // COMPLETAR: práctica 4: activar una colección de fuentes de luz
-   //   - crear un 'std::vector' con los colores y otro con las posiciones/direcciones,
-   //   - usar el método 'fijarFuentesLuz' del cauce para activarlas
-   // .....
+   // Práctica 4: activar una colección de fuentes de luz
+   // crear un 'std::vector' con los colores y otro con las posiciones/direcciones
+   vector<vec3> color;
+   vector<vec4> pos_dir_wc;
+
+   // vpf vector de punteros a fuentes
+   for (int i=0; i < vpf.size(); i++){
+      float longi = vpf[i]->longi;
+      float lati = vpf[i]->lati;
+
+      color.push_back({vpf[i]->color[0], vpf[i]->color[1], vpf[i]->color[2]});
+      pos_dir_wc.push_back({cos(radians(lati)), sin(radians(lati))*cos(radians(longi)), 
+                            sin(radians(lati))*cos(radians(longi)), 0.0f});
+
+   }
+
+   // usar el método 'fijarFuentesLuz' del cauce para activarlas
+   cauce->fijarFuentesLuz(color, pos_dir_wc);
 
 }
 

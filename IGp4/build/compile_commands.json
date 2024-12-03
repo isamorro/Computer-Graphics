@@ -36,6 +36,11 @@
 },
 {
   "directory": "/home/isabel/Escritorio/IG/IGp4/build",
+  "command": "/usr/bin/g++  -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../src -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp",
+  "file": "/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp"
+},
+{
+  "directory": "/home/isabel/Escritorio/IG/IGp4/build",
   "command": "/usr/bin/g++  -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../src -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -g -o CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/main.cpp",
   "file": "/home/isabel/Escritorio/IG/IGp4/src/main.cpp"
 },
@@ -133,6 +138,11 @@
   "directory": "/home/isabel/Escritorio/IG/IGp4/build",
   "command": "/usr/bin/g++  -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../src -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp",
   "file": "/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp"
+},
+{
+  "directory": "/home/isabel/Escritorio/IG/IGp4/build",
+  "command": "/usr/bin/g++  -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../src -I/home/isabel/Escritorio/IG/IGp4/builds/linux/../../materiales/src-cpp  -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field -Wfatal-errors -g -O2 -o CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o -c /home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp",
+  "file": "/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp"
 },
 {
   "directory": "/home/isabel/Escritorio/IG/IGp4/build",

@@ -45,9 +45,22 @@ void MallaInd::calcularNormalesTriangulos()
       return ;
    }
 
-   // COMPLETAR: Práctica 4: creación de la tabla de normales de triángulos
-   // ....
+   // Práctica 4: creación de la tabla de normales de triángulos
+   // sección 4.6.3.1
+   
+   for (int i = 0; i < nt; i++) {
 
+      vec3 a = vertices[triangulos[i][1]] - vertices[triangulos[i][0]];
+      vec3 b = vertices[triangulos[i][2]]- vertices[triangulos[i][0]];
+
+      vec3 mc = cross(a, b); // producto vectorial
+
+      vec3 nc;
+      if (length(mc) != 0.0) nc = normalize(mc);
+      else nc = vec3(0.0, 0.0, 0.0);
+      nor_tri.push_back(nc);
+
+   }
 }
 
 
@@ -57,11 +70,25 @@ void MallaInd::calcularNormalesTriangulos()
 void MallaInd:: calcularNormales()
 {
    using namespace glm ;
-   // COMPLETAR: en la práctica 4: calculo de las normales de la malla
+   
+   // Práctica 4: calculo de las normales de la malla
    // se debe invocar en primer lugar 'calcularNormalesTriangulos'
-   // .......
+   calcularNormalesTriangulos();
 
+   // sección 4.6.3.2
+   nor_ver = std::vector<vec3>(vertices.size(), vec3(0.0, 0.0, 0.0));
+   for (int i = 0; i < triangulos.size(); i++) {
+      for (int j = 0; j < 3; j++) {
 
+         int k = triangulos[i][j];
+         nor_ver[k] += nor_tri[i];
+      
+      }
+   }
+
+   for (int i = 0; i < nor_ver.size(); i++){
+      if (length(nor_ver[i]) != 0.0) nor_ver[i] = normalize(nor_ver[i]);
+   }
 }
 
 
@@ -182,25 +209,32 @@ void MallaInd::visualizarNormalesGL(  )
    }
    CError();
 
-   // COMPLETAR: práctica 4: visualizar las normales del objeto MallaInd
-   // 
-   // *1* Si el puntero al descriptor de VAO de normales ('dvao_normales') es nulo, 
-   //    debemos de crear dicho descriptor, con estos pasos:
-   //
-   //       * Para cada posición 'v_i' de un vértice en el vector 'vertices':
-   //             - Leer la correspondiente normal 'n_i' del vector de normales ('nor_ver').
-   //             - Añadir 'v_i' al vector 'segmentos_normales'.
-   //             - Añadir 'v_i+a*n_i' al vector 'segmentos_normales'.
-   //
-   //       * Crear el objeto descriptor del VAO de normales, para ello se usa el vector 
-   //          'segmentos_normales' y se tiene en cuenta que esa descriptor únicamente gestiona 
-   //          una tabla de atributos de vértices (la de posiciones, ya que las otras no se 
-   //          necesitan).
-   // 
-   // *2* Visualizar el VAO de normales, usando el método 'draw' del descriptor, con el 
-   //       tipo de primitiva 'GL_LINES'.
+   // Práctica 4: visualizar las normales del objeto MallaInd
 
-   //  ..........
+   // Si el puntero al descriptor de VAO de normales ('dvao_normales') es nulo, 
+   // debemos de crear dicho descriptor, con estos pasos:
+   if (dvao_normales == nullptr){
+      // Para cada posición 'v_i' de un vértice en el vector 'vertices':
+      for (int i=0; i < vertices.size(); i++){
+         // Añadir 'v_i' al vector 'segmentos_normales'.
+         segmentos_normales.push_back(vertices[i]);
+         // Leer la correspondiente normal 'n_i' del vector de normales ('nor_ver').
+         // Añadir 'v_i+a*n_i' al vector 'segmentos_normales'.
+         float a = 0.35f; // aleatorio?
+         segmentos_normales.push_back(vertices[i] + a*nor_ver[i]);
+      }
+   }
+   
+   // Crear el objeto descriptor del VAO de normales, para ello se usa el vector 
+   // 'segmentos_normales' y se tiene en cuenta que esa descriptor únicamente gestiona 
+   // una tabla de atributos de vértices (la de posiciones, ya que las otras no se 
+   // necesitan).
+   dvao_normales = new DescrVAO(numero_atributos_cauce, new DescrVBOAtribs(ind_atrib_posiciones, segmentos_normales));
+
+   // Visualizar el VAO de normales, usando el método 'draw' del descriptor, con el 
+   // tipo de primitiva 'GL_LINES'.
+   dvao_normales->draw(GL_LINES);
+
 
 }
 
@@ -240,10 +274,9 @@ MallaPLY::MallaPLY( const std::string & nombre_arch )
 
    // Práctica 2: leer archivo PLY e inicializar la malla
    LeerPLY(nombre_arch, vertices, triangulos);
-
-
-   // COMPLETAR: práctica 4: invocar  a 'calcularNormales' para el cálculo de normales
-   // .................
+   
+   // Práctica 4: invocar  a 'calcularNormales' para el cálculo de normales
+   calcularNormales();
 
 }
 
@@ -280,6 +313,9 @@ Cubo::Cubo()
          {1,5,7}, {1,7,3}  // Z+ (+1)
       } ;
 
+   // Práctica 4
+   calcularNormales();
+
 }
 
 // -----------------------------------------------------------------------------------------------
@@ -297,9 +333,9 @@ Tetraedro::Tetraedro() : MallaInd ("tetraedro de 4 vértices")
       {0,1,2}, {0,1,3}, {1,2,3}, {0,2,3}
    };
 
+   // Práctica 4
+   calcularNormales();
 
-   glm::vec3 colorTetraedro = {0.342, 0.567, 0.475};
-   ponerColor(colorTetraedro);
 }
 
 // -----------------------------------------------------------------------------------------------
