@@ -81,7 +81,7 @@ void MallaInd:: calcularNormales()
       for (int j = 0; j < 3; j++) {
 
          int k = triangulos[i][j];
-         nor_ver[k] += nor_tri[i];
+         nor_ver[k]  = nor_ver[k] + nor_tri[i];
       
       }
    }
@@ -223,19 +223,17 @@ void MallaInd::visualizarNormalesGL(  )
          float a = 0.35f; // aleatorio?
          segmentos_normales.push_back(vertices[i] + a*nor_ver[i]);
       }
+      
+      // Crear el objeto descriptor del VAO de normales, para ello se usa el vector 
+      // 'segmentos_normales' y se tiene en cuenta que esa descriptor únicamente gestiona 
+      // una tabla de atributos de vértices (la de posiciones, ya que las otras no se 
+      // necesitan).
+      dvao_normales = new DescrVAO(numero_atributos_cauce, new DescrVBOAtribs(ind_atrib_posiciones, segmentos_normales));
    }
    
-   // Crear el objeto descriptor del VAO de normales, para ello se usa el vector 
-   // 'segmentos_normales' y se tiene en cuenta que esa descriptor únicamente gestiona 
-   // una tabla de atributos de vértices (la de posiciones, ya que las otras no se 
-   // necesitan).
-   dvao_normales = new DescrVAO(numero_atributos_cauce, new DescrVBOAtribs(ind_atrib_posiciones, segmentos_normales));
-
    // Visualizar el VAO de normales, usando el método 'draw' del descriptor, con el 
    // tipo de primitiva 'GL_LINES'.
    dvao_normales->draw(GL_LINES);
-
-
 }
 
 // -----------------------------------------------------------------------------

@@ -54,36 +54,36 @@ LataPeones::LataPeones(){
 
 // PEONES
 
-    // Peón Madera
+// Peón Madera
     NodoGrafoEscena *peonMadera = new NodoGrafoEscena();
     peonMadera->ponerNombre("Peón de madera");
     peonMadera->ponerIdentificador(identificador);
     identificador++;
     // textura madera difuso-especular
     TexturaXY *textMadera = new TexturaXY("text-madera.jpg");
-    peonMadera->agregar(translate(vec3(0.0, 0.4, 1.0)));
-    peonMadera->agregar(scale(vec3(0.3, 0.3, 0.3)));
+    peonMadera->agregar(translate(vec3(0.0, 0.2, 1.0)));
+    peonMadera->agregar(scale(vec3(0.15, 0.15, 0.15)));
     peonMadera->agregar(new Material (textMadera, 0.5, 0.6, 0.5, 50.0));
     peonMadera->agregar(mallaPeon);
 
-    // Peón Blanco
+// Peón Blanco
     NodoGrafoEscena *peonBlanco = new NodoGrafoEscena();
     peonBlanco->ponerNombre("Peón de color blanco");
     peonBlanco->ponerIdentificador(identificador);
     identificador++;
-    peonBlanco->agregar(translate(vec3(0.5, 0.4, 1.0)));
-    peonBlanco->agregar(scale(vec3(0.3, 0.3, 0.3)));
+    peonBlanco->agregar(translate(vec3(0.4, 0.2, 1.0)));
+    peonBlanco->agregar(scale(vec3(0.15, 0.15, 0.15)));
     // difuso de color blanco
     peonBlanco->agregar(new Material (0.5, 0.2, 0.5, 5.0));
     peonBlanco->agregar(mallaPeon);
 
-    // Peón Negro
+// Peón Negro
     NodoGrafoEscena *peonNegro = new NodoGrafoEscena();
     peonNegro->ponerNombre("Peón de color negro");
     peonNegro->ponerIdentificador(identificador);
     identificador++;
-    peonNegro->agregar(translate(vec3(1.0, 0.4, 1.0)));
-    peonNegro->agregar(scale(vec3(0.3, 0.3, 0.3)));
+    peonNegro->agregar(translate(vec3(0.8, 0.2, 1.0)));
+    peonNegro->agregar(scale(vec3(0.15, 0.15, 0.15)));
     // especular sin apenas reflectividad difusa
     peonNegro->agregar(new Material (0.01, 0.2, 0.5, 50.0));
     peonNegro->agregar(mallaPeon);
@@ -93,6 +93,7 @@ LataPeones::LataPeones(){
     Lata *lata = new Lata();
     lata->ponerNombre("lata");
     lata->ponerIdentificador(identificador);
+    // lata->agregar(scale(vec3(1.2, 1.2, 1.2)));
 
 // OBJETO
 

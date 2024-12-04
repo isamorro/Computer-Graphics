@@ -79,10 +79,6 @@ void NodoGrafoEscena::visualizarGL(  )
    Cauce *          cauce           = aplicacionIG->cauce ;           assert( cauce != nullptr );
    PilaMateriales * pila_materiales = aplicacionIG->pila_materiales ; assert( pila_materiales != nullptr );
 
-   // Práctica 4: al inicio, hacer 'push' de la pila de materiales (guarda material actual en la pila)
-   // Diapositiva 211 tema 3
-   pila_materiales->push(); 
-
    // Práctica 3: implementar la visualización del nodo
 
    // 1. Si el objeto tiene un color asignado (se comprueba con 'tieneColor')
@@ -94,6 +90,10 @@ void NodoGrafoEscena::visualizarGL(  )
       cauce->fijarColor(leerColor());
    }
    
+   // Práctica 4: al inicio, hacer 'push' de la pila de materiales (guarda material actual en la pila)
+   // Diapositiva 211 tema 3
+   if (aplicacionIG->iluminacion) pila_materiales->push(); 
+
    // 2. Guardar copia de la matriz de modelado (con 'pushMM'), 
 
    cauce->pushMM();
@@ -136,8 +136,7 @@ void NodoGrafoEscena::visualizarGL(  )
    // Práctica 4: añadir gestión de los materiales cuando la iluminación está activada    
    // Al finalizar, hacer 'pop' de la pila de materiales (restaura el material activo al inicio)
    // Diapositiva 211 tema 3
-   pila_materiales->pop();
-
+   if (aplicacionIG->iluminacion) pila_materiales->pop();
 
 }
 

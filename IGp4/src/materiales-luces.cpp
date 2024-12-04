@@ -79,19 +79,6 @@ Textura::~Textura( )
    cout << "hecho (no hecho!)" << endl << flush ;
 }
 
-// Práctica 4
-TexturaXY::TexturaXY(const std::string &nom) : Textura(nom) {
-   modo_gen_ct = mgct_coords_objeto;
-}
-
-// Práctica 4
-TexturaXZ::TexturaXZ(const std::string &nom) : Textura(nom) {
-   modo_gen_ct = mgct_coords_objeto;
-
-   coefs_t[1] = 0.0;
-   coefs_t[2] = 1.0;
-}
-
 //----------------------------------------------------------------------
 // por ahora, se asume la unidad de texturas #0
 
@@ -107,6 +94,20 @@ void Textura::activar()
    cauce->fijarTipoGCT(modo_gen_ct, coefs_s, coefs_t);
 
 }
+
+// Práctica 4
+TexturaXY::TexturaXY(const std::string &nom) : Textura(nom) {
+   modo_gen_ct = mgct_coords_objeto;
+}
+
+// Práctica 4
+TexturaXZ::TexturaXZ(const std::string &nom) : Textura(nom) {
+   modo_gen_ct = mgct_coords_objeto;
+
+   coefs_t[1] = 0.0;
+   coefs_t[2] = 1.0;
+}
+
 // *********************************************************************
 // crea un material usando un color plano y los coeficientes de las componentes
 
@@ -165,8 +166,9 @@ void Material::activar( )
    // la activación debe dar error si se especifica valor nulo o muy bajo de exponente 
    // de la componente pseudo-especular (u_mil_exp), en general se debe usar un valor no
    // inferior a la unidad
-   assert (exp_pse < 1);
+   // assert (exp_pse < 1);
    if (textura != nullptr) textura->activar();
+   else cauce->fijarEvalText(false);
    cauce->fijarParamsMIL(k_amb, k_dif, k_pse, exp_pse);
 
 }

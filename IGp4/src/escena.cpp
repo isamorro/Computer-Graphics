@@ -24,7 +24,7 @@ Escena::Escena()
    // Para 'col_fuentes', se usará una instancia de 'Col2Fuentes'
    col_fuentes = new Col2Fuentes();
    // Se deben de elegir los parámetros del material.
-   material_ini = new Material(); // de esta forma usa los materiales por defecto, ok??
+   material_ini = new Material(0.4f, 0.8f, 0.0f, 2.0f); // de esta forma usa los materiales por defecto, ok??
 
 
    // COMPLETAR: práctica 5: añadir varias cámaras perspectiva y ortogonales al vector de cámaras de la escena
@@ -112,7 +112,7 @@ void Escena::visualizarGL( )
       // activar la colección de fuentes de la escena
       col_fuentes->activar();
       // activar el material inicial (usando 'pila_materiales')
-      material_ini->activar();
+      aplicacionIG->pila_materiales->activar(material_ini);
 
    }
    else // si la iluminación no está activada, deshabilitar MIL y texturas
