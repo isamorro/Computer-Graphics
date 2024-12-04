@@ -130,7 +130,11 @@ Lampara::Lampara()
     base->ponerIdentificador(identificador);
     identificador++;
 
-    base->ponerColor({0.4, 0.2, 0.0}); // marrón oscuro
+    // base->ponerColor({0.4, 0.2, 0.0}); // marrón oscuro
+    // Con tabla de coordenadas de textura
+    Textura* textMarmol = new Textura("text_marmol_negro.jpg");
+    base->agregar(new Material (textMarmol, 0.5, 0.6, 0.5, 50.0));
+
     base->agregar(translate(vec3(0.3, 0.0, -0.125)));
     base->agregar(new Base(4, 10, 0.5, 0.25));
 
@@ -143,11 +147,11 @@ Lampara::Lampara()
     identificador++;
 
     // brazo_inferior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+    // Generación automática de coordenadas de textura (modo coordenadas de objeto)
+    TexturaXY *textMetalOscuro = new TexturaXY("metalicoOscuro.jpg");
+    brazo_inferior->agregar(new Material (textMetalOscuro, 0.5, 0.6, 0.5, 50.0));
+
     brazo_inferior->agregar(translate(vec3(0.275, 0.25, 0.125)));
-    
-    TexturaXY *textMadera = new TexturaXY("text-madera.jpg");
-    brazo_inferior->agregar(new Material (textMadera, 0.5, 0.6, 0.5, 50.0));
-    
     brazo_inferior->agregar(new PrismaRectangular(1, 0.25, 0.25));
 
 //// BRAZO SUPERIOR de la lámpara
@@ -158,8 +162,8 @@ Lampara::Lampara()
     identificador++;
 
     // brazo_superior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
-
-    brazo_inferior->agregar(new Material (textMadera, 0.5, 0.6, 0.5, 50.0));
+    // El material se agrega directamente del brazo inferior
+    
     brazo_superior->agregar(new PrismaRectangular(2, 0.25, 0.25));
 
 //// BRAZO LATERAL de la lámpara
@@ -171,7 +175,8 @@ Lampara::Lampara()
 
     unsigned indice_traslacion_b_lat = brazo_lateral->agregar(translate(vec3{0.0, 0.0, 0.0}));  // 0
     
-    brazo_lateral->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+    // brazo_lateral->ponerColor({0.9, 0.7, 0.4}); // marrón claro
+
     brazo_lateral->agregar(translate(vec3(-0.45, 1.8, 0.0)));
     brazo_lateral->agregar(new PrismaRectangular(0.15, 0.65, 0.25));
 
@@ -184,7 +189,9 @@ Lampara::Lampara()
 
     unsigned indice_rotacion_cabezal = cabezal->agregar(rotate(0.0f, vec3(0.0, 1.0, 0.0)));     // 1
     
-    cabezal->ponerColor({0.4, 0.2, 0.0}); // marron oscuro
+    cabezal->ponerColor({0.0, 0.0, 0.0}); // negro
+    cabezal->agregar(new Material(0.3, 0.1, 0.8, 50.0));
+
     cabezal->agregar(translate(vec3(-0.3, -0.5, 0.0)));
     cabezal->agregar(new Cabezal(0.4, 0.5, 0.4));
 
@@ -197,7 +204,9 @@ Lampara::Lampara()
 
     unsigned indice_scale_bombilla = bombilla->agregar(scale(vec3(1.0, 1.0, 1.0)));             // 2
 
-    bombilla->ponerColor({1.0, 1.0, 0.0}); // amarillo
+    bombilla->ponerColor({1.0, 1.0, 1.0}); // blanco
+    bombilla->agregar(new Material(0.2, 0.5, 0.9, 100.0));
+
     bombilla->agregar(translate(vec3(0.0, -0.1, 0.0)));
     bombilla->agregar(new PrismaRectangular(0.1, 0.1, 0.1));
 

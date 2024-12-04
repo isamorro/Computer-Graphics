@@ -208,11 +208,9 @@ void Objeto3D::actualizarEstado( const float dtSec )
    initTP();
    for( unsigned i = 0 ; i < leerNumParametros() ; i++  )
    {
-      // Modificado por Isabel Morro Tabares (añadido el if)
-      if (i == ind_par_act){
-         tiempo_par_sec[i] += dtSec ;
-         actualizarEstadoParametro( i, tiempo_par_sec[i] );
-      }
+
+      tiempo_par_sec[i] += dtSec ;
+      actualizarEstadoParametro( i, tiempo_par_sec[i] );
    }
 }
 
