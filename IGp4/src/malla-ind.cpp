@@ -80,9 +80,9 @@ void MallaInd:: calcularNormales()
    for (int i = 0; i < triangulos.size(); i++) {
       for (int j = 0; j < 3; j++) {
 
-         int k = triangulos[i][j];
+         unsigned k = triangulos[i][j];
          nor_ver[k]  = nor_ver[k] + nor_tri[i];
-      
+   
       }
    }
 
@@ -374,6 +374,81 @@ CuboColores::CuboColores() : MallaInd ("cubo de colores de 8 vértices")
       {1.0, 1.0, 0.0}, // 6
       {1.0, 1.0, 1.0}, // 7
    };  
+}
+
+// Práctica 4: Cubo24
+// Cubo con 24 vértices (6 caras x 4 vertices)
+
+Cubo24::Cubo24()
+{
+   
+   vertices =
+      {
+         {+1.0, -1.0, +1.0}, 
+         {+1.0, +1.0, +1.0}, 
+         {+1.0, +1.0, -1.0}, 
+         {+1.0, -1.0, -1.0}, 
+
+         {-1.0, -1.0, +1.0}, 
+         {-1.0, +1.0, +1.0}, 
+         {+1.0, +1.0, +1.0}, 
+         {+1.0, -1.0, +1.0}, 
+
+         {-1.0, -1.0, -1.0}, 
+         {-1.0, +1.0, -1.0}, 
+         {-1.0, +1.0, +1.0}, 
+         {-1.0, -1.0, +1.0}, 
+
+         {+1.0, -1.0, -1.0}, 
+         {+1.0, +1.0, -1.0}, 
+         {-1.0, +1.0, -1.0}, 
+         {-1.0, -1.0, -1.0}, 
+
+
+         {+1.0, +1.0, +1.0}, 
+         {-1.0, +1.0, +1.0}, 
+         {-1.0, +1.0, -1.0}, 
+         {+1.0, +1.0, -1.0}, 
+
+         {+1.0, -1.0, +1.0}, 
+         {-1.0, -1.0, +1.0}, 
+         {-1.0, -1.0, -1.0}, 
+         {+1.0, -1.0, -1.0} 
+      };
+
+   triangulos =
+      {
+         {0, 3, 2},
+         {0, 2, 1},
+
+         {4, 7, 6},
+         {4, 6, 5},
+
+         {8, 11, 10},
+         {8, 10, 9},
+
+         {12, 15, 14},
+         {12, 14, 13},
+
+         {16, 19, 18},
+         {16, 18, 17},
+
+         {20, 22, 23},
+         {20, 21, 22}
+      };
+
+   // Asignamos valores a las tablas de coordenadas de texturas explícitamente
+   // t3 diap 134
+
+   for (int i=0; i < 6; i++){
+      cc_tt_ver.push_back({0, 1});
+      cc_tt_ver.push_back({1, 1});
+      cc_tt_ver.push_back({1, 0});
+      cc_tt_ver.push_back({0, 0});
+   }
+
+   calcularNormales();
+
 }
 
 // ----------------------EJERCICIOS OPCIONALES------------------------------
@@ -777,4 +852,37 @@ MallaTorre::MallaTorre
       j += 4;
    }
 
+}
+
+// ---------------------------------------------------------------------
+// Ejercicio 1 Práctica 4
+
+MallaDiscoP4::MallaDiscoP4()
+{
+   // Dado por profesor
+   ponerColor({1.0, 1.0, 1.0});
+   const unsigned ni = 23, nj = 31 ;
+   for( unsigned i= 0 ; i < ni ; i++ )
+   for( unsigned j= 0 ; j < nj ; j++ )
+   {
+      const float
+         fi = float(i)/float(ni-1),
+         fj = float(j)/float(nj-1),
+         ai = 2.0*M_PI*fi,
+         x = fj * cos( ai ),
+         y = fj * sin( ai ),
+         z = 0.0 ;
+      vertices.push_back({ x, y, z });
+
+      // Ej 1
+      // cc_tt_ver.push_back({0.5 * (1.0 + fj * cos(2.0 * M_PI * fi)), 0.5 * (1.0 + fj * sin(2.0 * M_PI * fi))});
+      // Ej 2
+      cc_tt_ver.push_back({fj, fi});
+   }
+   for( unsigned i= 0 ; i < ni-1 ; i++ )
+   for( unsigned j= 0 ; j < nj-1 ; j++ )
+   {
+      triangulos.push_back({ i*nj+j, i*nj+(j+1), (i+1)*nj+(j+1) });
+      triangulos.push_back({ i*nj+j, (i+1)*nj+(j+1), (i+1)*nj+j });
+   }
 }

@@ -336,7 +336,10 @@ Escena3::Escena3()
    using namespace std;
    cout << "Creando objetos de la práctica 3." << endl;
 
+   // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
    objetos.push_back(new Lampara());
+
+   // ----------------------EJERCICIOS OPCIONALES------------------------------  
    objetos.push_back(new GrafoEstrellaX(6));
    objetos.push_back(new GrafoCubos());
 
@@ -354,8 +357,12 @@ Escena4::Escena4(){
    using namespace std;
    cout << "Creando objetos de la práctica 4." << endl;
 
+   // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
    objetos.push_back(new LataPeones());
+   objetos.push_back(new NodoCubo24());
 
+   // ----------------------EJERCICIOS OPCIONALES------------------------------
+   objetos.push_back(new NodoDiscoP4());
 }
 
 

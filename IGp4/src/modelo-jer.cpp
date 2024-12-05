@@ -76,40 +76,76 @@ PrismaRectangular::PrismaRectangular
 
     ponerNombre("Retangulo que forma parte de la lámpara por mallas indexadas");
 
+    float x = anchura/2;
+    float y = altura;
+    float z = fondo/2;
    
-    vertices.push_back({-anchura/2, 0.0, fondo/2});
-    vertices.push_back({-anchura/2, 0.0, -fondo/2});
-    vertices.push_back({anchura/2, 0.0, -fondo/2});
-    vertices.push_back({anchura/2, 0.0, fondo/2});
-   
-    vertices.push_back({-anchura/2, altura, fondo/2});
-    vertices.push_back({-anchura/2, altura, -fondo/2});
-    vertices.push_back({anchura/2, altura, -fondo/2});
-    vertices.push_back({anchura/2, altura, fondo/2});
 
-    // Base
+    vertices =
+        {
+            {x, 0.0, z}, 
+            {x, y, z}, 
+            {x, y, -z}, 
+            {x, 0.0, -z}, 
 
-    triangulos.push_back({0, 1, 2});
-    triangulos.push_back({0, 2, 3});
+            {-x, 0.0, z}, 
+            {-x, y, z}, 
+            {x, y, z}, 
+            {x, 0.0, z}, 
 
-    // Caras Laterales
+            {-x, 0.0, -z}, 
+            {-x, y, -z}, 
+            {-x, y, z}, 
+            {-x, 0.0, z}, 
 
-    triangulos.push_back({0, 3, 7});
-    triangulos.push_back({0, 4, 7});
+            {x, 0.0, -z}, 
+            {x, y, -z}, 
+            {-x, y, -z}, 
+            {-x, 0.0, -z}, 
 
-    triangulos.push_back({0, 1, 4});
-    triangulos.push_back({4, 5, 1});
+            {x, y, z}, 
+            {-x, y, z}, 
+            {-x, y, -z}, 
+            {x, y, -z}, 
 
-    triangulos.push_back({1, 5, 2});
-    triangulos.push_back({5, 6, 2});
+            {x, 0.0, z}, 
+            {-x, 0.0, z}, 
+            {-x, 0.0, -z}, 
+            {x, 0.0, -z} 
+        };
 
-    triangulos.push_back({2, 6, 3});
-    triangulos.push_back({6, 7, 3});
+    triangulos =
+        {
+            {0, 3, 2},
+            {0, 2, 1},
 
-    // Tapa
+            {4, 7, 6},
+            {4, 6, 5},
 
-    triangulos.push_back({4, 5, 6});
-    triangulos.push_back({4, 6, 7});
+            {8, 11, 10},
+            {8, 10, 9},
+
+            {12, 15, 14},
+            {12, 14, 13},
+
+            {16, 19, 18},
+            {16, 18, 17},
+
+            {20, 22, 23},
+            {20, 21, 22}
+        };
+
+    // Asignamos valores a las tablas de coordenadas de texturas explícitamente
+    // t3 diap 134
+
+    for (int i=0; i < 6; i++){
+        cc_tt_ver.push_back({0, 1});
+        cc_tt_ver.push_back({1, 1});
+        cc_tt_ver.push_back({1, 0});
+        cc_tt_ver.push_back({0, 0});
+    }
+
+    calcularNormales();
 
 }
 
@@ -123,6 +159,21 @@ Lampara::Lampara()
     ponerNombre("Lampara");
     NodoGrafoEscena *lampara = new NodoGrafoEscena();
 
+//// MATERIALES Y TEXTURAS
+
+    Textura* textMarmol = new Textura("text-marmol-negro.jpg");
+    Material *matMarmol = new Material (textMarmol, 0.5, 0.6, 0.5, 50.0);
+
+    // material difuso
+    Material *matBrazoInferior = new Material (0.0, 1.0, 0.5, 50.0);
+
+    TexturaXY *textMetalOscuro = new TexturaXY("text-metalico-oscuro.jpg");
+    // material pseudo-especular
+    Material *matMetal = new Material (textMetalOscuro, 0.0, 0.0, 1.0, 5.0);
+
+    Textura *textPlasticoBlanco = new Textura ("text-plastico-blanco.jpg");
+    Material *matBombilla = new Material(textPlasticoBlanco, 0.5, 0.6, 0.5, 50.0);
+
 //// BASE de la lámpara
 
     NodoGrafoEscena *base = new NodoGrafoEscena();
@@ -130,14 +181,9 @@ Lampara::Lampara()
     base->ponerIdentificador(identificador);
     identificador++;
 
-    // base->ponerColor({0.4, 0.2, 0.0}); // marrón oscuro
-    // Con tabla de coordenadas de textura
-    Textura* textMarmol = new Textura("text_marmol_negro.jpg");
-    base->agregar(new Material (textMarmol, 0.5, 0.6, 0.5, 50.0));
-
+    base->agregar(matMarmol);
     base->agregar(translate(vec3(0.3, 0.0, -0.125)));
     base->agregar(new Base(4, 10, 0.5, 0.25));
-
 
 //// BRAZO INFERIOR de la lámpara
 
@@ -146,11 +192,7 @@ Lampara::Lampara()
     brazo_inferior->ponerIdentificador(identificador);
     identificador++;
 
-    // brazo_inferior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
-    // Generación automática de coordenadas de textura (modo coordenadas de objeto)
-    TexturaXY *textMetalOscuro = new TexturaXY("metalicoOscuro.jpg");
-    brazo_inferior->agregar(new Material (textMetalOscuro, 0.5, 0.6, 0.5, 50.0));
-
+    brazo_inferior->agregar(matBrazoInferior);
     brazo_inferior->agregar(translate(vec3(0.275, 0.25, 0.125)));
     brazo_inferior->agregar(new PrismaRectangular(1, 0.25, 0.25));
 
@@ -161,9 +203,7 @@ Lampara::Lampara()
     brazo_superior->ponerIdentificador(identificador);
     identificador++;
 
-    // brazo_superior->ponerColor({0.9, 0.7, 0.4}); // marrón claro
-    // El material se agrega directamente del brazo inferior
-    
+    brazo_superior->agregar(matMetal);    
     brazo_superior->agregar(new PrismaRectangular(2, 0.25, 0.25));
 
 //// BRAZO LATERAL de la lámpara
@@ -175,8 +215,6 @@ Lampara::Lampara()
 
     unsigned indice_traslacion_b_lat = brazo_lateral->agregar(translate(vec3{0.0, 0.0, 0.0}));  // 0
     
-    // brazo_lateral->ponerColor({0.9, 0.7, 0.4}); // marrón claro
-
     brazo_lateral->agregar(translate(vec3(-0.45, 1.8, 0.0)));
     brazo_lateral->agregar(new PrismaRectangular(0.15, 0.65, 0.25));
 
@@ -189,9 +227,6 @@ Lampara::Lampara()
 
     unsigned indice_rotacion_cabezal = cabezal->agregar(rotate(0.0f, vec3(0.0, 1.0, 0.0)));     // 1
     
-    cabezal->ponerColor({0.0, 0.0, 0.0}); // negro
-    cabezal->agregar(new Material(0.3, 0.1, 0.8, 50.0));
-
     cabezal->agregar(translate(vec3(-0.3, -0.5, 0.0)));
     cabezal->agregar(new Cabezal(0.4, 0.5, 0.4));
 
@@ -204,9 +239,7 @@ Lampara::Lampara()
 
     unsigned indice_scale_bombilla = bombilla->agregar(scale(vec3(1.0, 1.0, 1.0)));             // 2
 
-    bombilla->ponerColor({1.0, 1.0, 1.0}); // blanco
-    bombilla->agregar(new Material(0.2, 0.5, 0.9, 100.0));
-
+    bombilla->agregar(matBombilla);
     bombilla->agregar(translate(vec3(0.0, -0.1, 0.0)));
     bombilla->agregar(new PrismaRectangular(0.1, 0.1, 0.1));
 
@@ -217,7 +250,7 @@ Lampara::Lampara()
     interruptor->ponerIdentificador(identificador);
     identificador++;
 
-    interruptor->ponerColor({0.4, 0.2, 0.0}); // marron oscuro
+    interruptor->agregar(matMarmol);
     interruptor->agregar(translate(vec3(-0.2, 0.8, 0.0)));
     interruptor->agregar(new PrismaRectangular(0.15, 0.15, 0.05));
 

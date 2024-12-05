@@ -33,6 +33,7 @@ void MallaRevol::inicializar
       if (length(m_aux) != 0.0) m_aux = normalize(m_aux); // normalizado
       vec_m.push_back(m_aux);
    }
+   
    // calculamos las normales de los vectores n_0..n_n-1
    vector<vec3> vec_n;
    vec_n.push_back(vec_m[0]);

@@ -347,9 +347,20 @@ bool NodoGrafoEscena::buscarObjeto
    return false ;
 }
 
+// *********************************************************************
+// Práctica 4: NodoCubo24
+
+NodoCubo24::NodoCubo24()
+{
+
+   Textura *ugr = new Textura ("window-icon.jpg");
+   agregar( new Material(ugr, 0.5, 0.3, 0.7, 100.0));
+   agregar(new Cubo24());
+
+}
 
 // *********************************************************************
-// EJERCICIOS OPCIONALES PRÁTCICA 3
+// EJERCICIOS OPCIONALES PRÁCTICA 3
 
 // EJERCICIO 1
 
@@ -609,4 +620,21 @@ void GrafoCubos::actualizarEstadoParametro
          break;
       }
    }
+}
+
+// *********************************************************************
+// EJERCICIOS OPCIONALES PRÁCTICA 4
+
+// EJERCICIO 1
+
+NodoDiscoP4::NodoDiscoP4()
+{
+
+   Textura *cuadricula = new Textura ("cuadricula.jpg");
+   Material *material = new Material(cuadricula, 0.5, 0.8, 0.2, 100.0);
+
+   ponerNombre("Nodo ejercicio adicional práctica 4, examen 27 enero");
+   agregar(material);
+   agregar( new MallaDiscoP4() );
+
 }

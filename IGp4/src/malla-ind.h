@@ -115,6 +115,16 @@ class CuboColores : public MallaInd
       CuboColores();
 };
 
+// ---------------------------------------------------------------------
+
+class Cubo24 : public MallaInd
+{
+
+   public:
+      Cubo24();
+
+};
+
 // ----------------------EJERCICIOS OPCIONALES------------------------------
 
 // Ejercicio 1 Práctica 1
@@ -204,5 +214,13 @@ class MallaTorre : public MallaInd
    );
 };
 
+// ---------------------------------------------------------------------
+// Ejercicio 1 Práctica 4
+
+class MallaDiscoP4 : public MallaInd 
+{
+   public:
+      MallaDiscoP4();
+};
 
 #endif

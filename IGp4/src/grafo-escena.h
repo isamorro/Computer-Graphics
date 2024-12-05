@@ -95,9 +95,19 @@ class NodoGrafoEscena : public Objeto3D
 } ;
 
 // *********************************************************************
-// EJERCICIOS OPCIONALES PRÁTCICA 3
+// Práctica 4: NodoCubo24
 
-// EJERCICIO 1 (Sin terminar)
+class NodoCubo24 : public NodoGrafoEscena {
+
+   public:
+      NodoCubo24();
+
+};
+
+// *********************************************************************
+// EJERCICIOS OPCIONALES PRÁCTICA 3
+
+// EJERCICIO 1 
 
 class GrafoEstrellaX : public NodoGrafoEscena {
 
@@ -153,6 +163,21 @@ class GrafoCubos : public NodoGrafoEscena {
       );
 
 };
+
+// *********************************************************************
+// EJERCICIOS OPCIONALES PRÁCTICA 4
+
+// EJERCICIO 1 
+
+class NodoDiscoP4 : public NodoGrafoEscena 
+{
+
+   public:
+      NodoDiscoP4();
+
+};
+
+
 
 #endif // GRAFO_ESCENA_HPP
 
