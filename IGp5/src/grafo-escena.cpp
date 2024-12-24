@@ -228,22 +228,37 @@ void NodoGrafoEscena::visualizarModoSeleccionGL()
    assert( aplicacionIG != nullptr );
    Cauce * cauce = aplicacionIG->cauce ; assert( cauce != nullptr );
 
-   // COMPLETAR: práctica 5: visualizar este nodo en modo selección.
-   //
-   // Se debe escribir código para dar estos pasos:
-   // 
-   // 2. Leer identificador (con 'leerIdentificador'), si el identificador no es -1 
+   // Práctica 5: visualizar este nodo en modo selección.
+   
+   // 1. Leer identificador (con 'leerIdentificador'), si el identificador no es -1 
    //      + Guardar una copia del color actual del cauce (con 'pushColor')
    //      + Fijar el color del cauce de acuerdo al identificador, (usar 'ColorDesdeIdent'). 
-   // 3. Guardar una copia de la matriz de modelado (con 'pushMM')
-   // 4. Recorrer la lista de nodos y procesar las entradas transformación o subobjeto:
+   int identificador = leerIdentificador();
+   if (identificador != -1) {
+      cauce->pushColor();
+      cauce->fijarColor(ColorDesdeIdent(identificador));
+   }
+
+   
+   // 2. Guardar una copia de la matriz de modelado (con 'pushMM')
+   cauce->pushMM();
+   
+   // 3. Recorrer la lista de nodos y procesar las entradas transformación o subobjeto:
    //      + Para las entradas subobjeto, invocar recursivamente a 'visualizarModoSeleccionGL'
    //      + Para las entradas transformación, componer la matriz (con 'compMM')
-   // 5. Restaurar la matriz de modelado original (con 'popMM')   
-   // 6. Si el identificador no es -1, restaurar el color previo del cauce (con 'popColor')
-   //
-   // ........
+   
+   for (int i = 0; i < entradas.size(); i++) {
+      if (entradas[i].tipo == TipoEntNGE::objeto)
+         entradas[i].objeto->visualizarModoSeleccionGL();
+      else if (entradas[i].tipo == TipoEntNGE::transformacion)
+         cauce->compMM(*entradas[i].matriz);
+   }
 
+   // 4. Restaurar la matriz de modelado original (con 'popMM')   
+   cauce->popMM();
+
+   // 5. Si el identificador no es -1, restaurar el color previo del cauce (con 'popColor')
+   if (identificador != -1) cauce->popColor();
 
 }
 
@@ -305,10 +320,31 @@ void NodoGrafoEscena::calcularCentroOC()
    using namespace std ;
    using namespace glm ;
 
-   // COMPLETAR: práctica 5: calcular y guardar el centro del nodo
+   // Práctica 5: calcular y guardar el centro del nodo
    //    en coordenadas de objeto (hay que hacerlo recursivamente)
    //   (si el centro ya ha sido calculado, no volver a hacerlo)
-   // ........
+   if (centro_calculado)
+      return;
+   
+   int contador = 0;
+   mat4 matrizModelado(1.0f);
+   vec3 centroAcumulado = vec3(0.0, 0.0, 0.0);
+
+   for (unsigned int i = 0; i < entradas.size(); i++){
+      if (entradas[i].tipo == TipoEntNGE::transformacion){
+         matrizModelado = matrizModelado * (*entradas[i].matriz);
+      }
+      else if (entradas[i].tipo == TipoEntNGE::objeto){
+         entradas[i].objeto->calcularCentroOC();
+         centroAcumulado = centroAcumulado + vec3(matrizModelado * vec4(entradas[i].objeto->leerCentroOC(),1.0f));
+         contador++;
+      }
+   }
+
+   for (int i = 0; i < 3; i++) centroAcumulado[i] /= contador;
+   
+   ponerCentroOC(centroAcumulado);
+   centro_calculado = true;
 
 }
 // -----------------------------------------------------------------------------
@@ -327,21 +363,30 @@ bool NodoGrafoEscena::buscarObjeto
    
    assert( 0 < ident_busc );
 
-   // COMPLETAR: práctica 5: buscar un sub-objeto con un identificador
-   // Se deben de dar estos pasos:
+   // Práctica 5: buscar un sub-objeto con un identificador
 
    // 1. calcula el centro del objeto, (solo la primera vez)
-   // ........
+   calcularCentroOC();
 
 
    // 2. si el identificador del nodo es el que se busca, ya está (terminar)
-   // ........
-
+   if (ident_busc == leerIdentificador()) {
+      *objeto = this;
+      centro_wc = leerCentroOC();
+      return true;
+   }
 
    // 3. El nodo no es el buscado: buscar recursivamente en los hijos
    //    (si alguna llamada para un sub-árbol lo encuentra, terminar y devolver 'true')
-   // ........
+   
+   mat4 mat = mmodelado;
 
+   for(int i=0; i<entradas.size(); i++){
+        if(entradas[i].tipo == TipoEntNGE::objeto){
+            if(entradas[i].objeto->buscarObjeto(ident_busc, mat, objeto, centro_wc)) return true;
+        }
+        else if(entradas[i].tipo == TipoEntNGE::transformacion) mat = mat*(*entradas[i].matriz);
+   }
 
    // ni este nodo ni ningún hijo es el buscado: terminar
    return false ;
@@ -636,5 +681,44 @@ NodoDiscoP4::NodoDiscoP4()
    ponerNombre("Nodo ejercicio adicional práctica 4, examen 27 enero");
    agregar(material);
    agregar( new MallaDiscoP4() );
+
+}
+
+// Ejercicio 3
+
+TexturaEJ3::TexturaEJ3
+(
+   bool orientacion
+) : Textura ("text-madera.jpg")
+{
+   if (orientacion) {
+
+      modo_gen_ct = mgct_coords_objeto;
+   
+   }
+
+   else {
+
+      modo_gen_ct = mgct_coords_objeto;
+
+      coefs_t[1] = 0.0;
+      coefs_t[2] = 1.0;
+   
+   }
+}
+
+NodoEJ3::NodoEJ3
+(
+   bool orientacion
+)
+{
+
+   Textura *textura = new TexturaEJ3(orientacion);
+   Material *mat = new Material(textura, 0.5, 0.8, 0.2, 100.0);
+   MallaPLY *beethoven = new MallaPLY ("beethoven.ply");
+
+   ponerNombre("Creando beethoven P4");
+   agregar (mat);
+   agregar(beethoven);
 
 }

@@ -246,8 +246,7 @@ void MallaInd::visualizarModoSeleccionGL()
    assert( aplicacionIG != nullptr );
    Cauce * cauce = aplicacionIG->cauce ; assert( cauce != nullptr );
 
-   // COMPLETAR: práctica 5: visualizar la malla en modo selección 
-   //
+   // Práctica 5: visualizar la malla en modo selección 
    // Se debe escribir código para visualizar únicamente la geometría, pero usando el color 
    // obtenido a partir del identificador. El código da estos pasos:
    // 
@@ -256,9 +255,18 @@ void MallaInd::visualizarModoSeleccionGL()
    //       + Hacer push del color del cauce, con 'pushColor'.
    //       + Fijar el color del cauce (con 'fijarColor') usando un color obtenido a 
    //         partir del identificador (con 'ColorDesdeIdent'). 
+
+   int identificador = leerIdentificador();
+   if (identificador != -1) {
+      cauce->pushColor();
+      cauce->fijarColor(ColorDesdeIdent(identificador));
+   }
+
    // 2. Invocar 'visualizarGeomGL' para visualizar la geometría.
+   visualizarGeomGL();
+
    // 3. Si tiene identificador: hacer pop del color, con 'popColor'.
-   //
+   if (identificador != -1) cauce->popColor();
 
 }
 

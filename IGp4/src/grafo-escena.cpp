@@ -638,3 +638,43 @@ NodoDiscoP4::NodoDiscoP4()
    agregar( new MallaDiscoP4() );
 
 }
+
+// Ejercicio 3
+
+TexturaEJ3::TexturaEJ3
+(
+   bool orientacion
+) : Textura ("text-madera.jpg")
+{
+   if (orientacion) {
+
+      modo_gen_ct = mgct_coords_objeto;
+   
+   }
+
+   else {
+
+      modo_gen_ct = mgct_coords_objeto;
+
+      coefs_t[1] = 0.0;
+      coefs_t[2] = 1.0;
+   
+   }
+}
+
+NodoEJ3::NodoEJ3
+(
+   bool orientacion
+)
+{
+
+   Textura *textura = new TexturaEJ3(orientacion);
+   Material *mat = new Material(textura, 0.5, 0.8, 0.2, 100.0);
+   MallaPLY *beethoven = new MallaPLY ("beethoven.ply");
+
+   ponerNombre("Creando beethoven P4");
+   agregar (mat);
+   agregar(beethoven);
+
+}
+

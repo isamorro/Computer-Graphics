@@ -79,6 +79,7 @@ class TexturaXY : public Textura
 {
    public: TexturaXY( const std::string & nom );
 } ;
+
 class TexturaXZ : public Textura
 {
    public: TexturaXZ( const std::string & nom );

@@ -76,12 +76,13 @@ bool Objeto3D::cuandoClick( const glm::vec3 & centro_wc )
    cout << "Ejecutando método 'cuandoClick' por defecto." << endl ;
    cout << "Click realizado sobre el objeto: '" << leerNombre() << "'" << endl ;
 
-   // COMPLETAR: práctica 5: apuntar la cámara actual a este objeto 
-   //
+   // Práctica 5: apuntar la cámara actual a este objeto 
    // Recuperar la camara actual de la escena (puntero 'escena') con el método 'camaraActual', 
    // y hacer que apunte al punto central de este objeto (parámetro 'centro_wc'), usando 
    // el método 'mirarHacia' de esa cámara.
-   // ...
+
+   cout << centro_wc[0] << " " << centro_wc[1] << " " << centro_wc[2] << endl;
+   escena->camaraActual()->mirarHacia(centro_wc);
 
    return true ;
 }

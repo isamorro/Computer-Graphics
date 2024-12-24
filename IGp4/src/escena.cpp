@@ -363,6 +363,8 @@ Escena4::Escena4(){
 
    // ----------------------EJERCICIOS OPCIONALES------------------------------
    objetos.push_back(new NodoDiscoP4());
+   objetos.push_back(new NodoEJ3(true));
+   objetos.push_back(new NodoEJ3(false));
 }
 
 

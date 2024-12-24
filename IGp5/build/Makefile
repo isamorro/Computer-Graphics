@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/isabel/Escritorio/IG/IGp4/builds/linux
+CMAKE_SOURCE_DIR = /home/isabel/Escritorio/IG/IGp5/builds/linux
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/isabel/Escritorio/IG/IGp5/build
@@ -142,572 +142,572 @@ release_exe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/build
 .PHONY : release_exe/fast
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.o: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.o: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.i: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.i: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.s: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.s: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.cpp.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.o: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.o: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.i: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.i: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.s: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.s: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.cpp.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.o: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.o: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.i: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.i: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.s: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.s: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.cpp.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.o: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.o: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.i: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.i: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.s: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.s: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.cpp.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.o: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.o: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.o
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.i: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.i: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.i
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.s: home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.s: home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.cpp.s
+home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/animacion.o: home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/animacion.o
+home/isabel/Escritorio/IG/IGp5/src/animacion.o: home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/animacion.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/animacion.i: home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/animacion.i
+home/isabel/Escritorio/IG/IGp5/src/animacion.i: home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/animacion.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/animacion.s: home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/animacion.s
+home/isabel/Escritorio/IG/IGp5/src/animacion.s: home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/animacion.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/animacion.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/animacion.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.o: home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.o
+home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.o: home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.i: home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.i
+home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.i: home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.s: home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.s
+home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.s: home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/camara.o: home/isabel/Escritorio/IG/IGp4/src/camara.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/camara.o
+home/isabel/Escritorio/IG/IGp5/src/camara.o: home/isabel/Escritorio/IG/IGp5/src/camara.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/camara.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/camara.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/camara.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/camara.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/camara.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/camara.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/camara.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/camara.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/camara.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/camara.i: home/isabel/Escritorio/IG/IGp4/src/camara.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/camara.i
+home/isabel/Escritorio/IG/IGp5/src/camara.i: home/isabel/Escritorio/IG/IGp5/src/camara.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/camara.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/camara.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/camara.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/camara.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/camara.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/camara.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/camara.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/camara.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/camara.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/camara.s: home/isabel/Escritorio/IG/IGp4/src/camara.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/camara.s
+home/isabel/Escritorio/IG/IGp5/src/camara.s: home/isabel/Escritorio/IG/IGp5/src/camara.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/camara.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/camara.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/camara.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/camara.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/camara.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/camara.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/camara.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/camara.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/camara.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/escena.o: home/isabel/Escritorio/IG/IGp4/src/escena.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/escena.o
+home/isabel/Escritorio/IG/IGp5/src/escena.o: home/isabel/Escritorio/IG/IGp5/src/escena.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/escena.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/escena.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/escena.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/escena.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/escena.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/escena.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/escena.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/escena.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/escena.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/escena.i: home/isabel/Escritorio/IG/IGp4/src/escena.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/escena.i
+home/isabel/Escritorio/IG/IGp5/src/escena.i: home/isabel/Escritorio/IG/IGp5/src/escena.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/escena.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/escena.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/escena.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/escena.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/escena.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/escena.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/escena.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/escena.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/escena.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/escena.s: home/isabel/Escritorio/IG/IGp4/src/escena.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/escena.s
+home/isabel/Escritorio/IG/IGp5/src/escena.s: home/isabel/Escritorio/IG/IGp5/src/escena.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/escena.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/escena.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/escena.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/escena.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/escena.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/escena.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/escena.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/escena.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/escena.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/eventos-raton.o: home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-raton.o
+home/isabel/Escritorio/IG/IGp5/src/eventos-raton.o: home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-raton.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/eventos-raton.i: home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-raton.i
+home/isabel/Escritorio/IG/IGp5/src/eventos-raton.i: home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-raton.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/eventos-raton.s: home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-raton.s
+home/isabel/Escritorio/IG/IGp5/src/eventos-raton.s: home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-raton.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-raton.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-raton.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.o: home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.o
+home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.o: home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.i: home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.i
+home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.i: home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.s: home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.s
+home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.s: home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/grafo-escena.o: home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/grafo-escena.o
+home/isabel/Escritorio/IG/IGp5/src/grafo-escena.o: home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/grafo-escena.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/grafo-escena.i: home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/grafo-escena.i
+home/isabel/Escritorio/IG/IGp5/src/grafo-escena.i: home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/grafo-escena.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/grafo-escena.s: home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/grafo-escena.s
+home/isabel/Escritorio/IG/IGp5/src/grafo-escena.s: home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/grafo-escena.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/grafo-escena.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/grafo-escena.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/latapeones.o: home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.o
+home/isabel/Escritorio/IG/IGp5/src/latapeones.o: home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/latapeones.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/latapeones.i: home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.i
+home/isabel/Escritorio/IG/IGp5/src/latapeones.i: home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/latapeones.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/latapeones.s: home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.s
+home/isabel/Escritorio/IG/IGp5/src/latapeones.s: home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/latapeones.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/latapeones.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/latapeones.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/main.o: home/isabel/Escritorio/IG/IGp4/src/main.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/main.o
+home/isabel/Escritorio/IG/IGp5/src/main.o: home/isabel/Escritorio/IG/IGp5/src/main.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/main.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/main.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/main.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/main.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/main.i: home/isabel/Escritorio/IG/IGp4/src/main.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/main.i
+home/isabel/Escritorio/IG/IGp5/src/main.i: home/isabel/Escritorio/IG/IGp5/src/main.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/main.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/main.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/main.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/main.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/main.s: home/isabel/Escritorio/IG/IGp4/src/main.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/main.s
+home/isabel/Escritorio/IG/IGp5/src/main.s: home/isabel/Escritorio/IG/IGp5/src/main.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/main.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/main.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/main.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/main.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/main.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/malla-ind.o: home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-ind.o
+home/isabel/Escritorio/IG/IGp5/src/malla-ind.o: home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-ind.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/malla-ind.i: home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-ind.i
+home/isabel/Escritorio/IG/IGp5/src/malla-ind.i: home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-ind.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/malla-ind.s: home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-ind.s
+home/isabel/Escritorio/IG/IGp5/src/malla-ind.s: home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-ind.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-ind.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-ind.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/malla-revol.o: home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-revol.o
+home/isabel/Escritorio/IG/IGp5/src/malla-revol.o: home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-revol.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/malla-revol.i: home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-revol.i
+home/isabel/Escritorio/IG/IGp5/src/malla-revol.i: home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-revol.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/malla-revol.s: home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-revol.s
+home/isabel/Escritorio/IG/IGp5/src/malla-revol.s: home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-revol.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/malla-revol.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/malla-revol.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/materiales-luces.o: home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/materiales-luces.o
+home/isabel/Escritorio/IG/IGp5/src/materiales-luces.o: home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/materiales-luces.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/materiales-luces.i: home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/materiales-luces.i
+home/isabel/Escritorio/IG/IGp5/src/materiales-luces.i: home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/materiales-luces.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/materiales-luces.s: home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/materiales-luces.s
+home/isabel/Escritorio/IG/IGp5/src/materiales-luces.s: home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/materiales-luces.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/materiales-luces.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/materiales-luces.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/modelo-jer.o: home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/modelo-jer.o
+home/isabel/Escritorio/IG/IGp5/src/modelo-jer.o: home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/modelo-jer.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/modelo-jer.i: home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/modelo-jer.i
+home/isabel/Escritorio/IG/IGp5/src/modelo-jer.i: home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/modelo-jer.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/modelo-jer.s: home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/modelo-jer.s
+home/isabel/Escritorio/IG/IGp5/src/modelo-jer.s: home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/modelo-jer.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/modelo-jer.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/modelo-jer.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/objeto3d.o: home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/objeto3d.o
+home/isabel/Escritorio/IG/IGp5/src/objeto3d.o: home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/objeto3d.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/objeto3d.i: home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/objeto3d.i
+home/isabel/Escritorio/IG/IGp5/src/objeto3d.i: home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/objeto3d.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/objeto3d.s: home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/objeto3d.s
+home/isabel/Escritorio/IG/IGp5/src/objeto3d.s: home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/objeto3d.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/objeto3d.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/objeto3d.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/seleccion.o: home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/seleccion.o
+home/isabel/Escritorio/IG/IGp5/src/seleccion.o: home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/seleccion.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/seleccion.i: home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/seleccion.i
+home/isabel/Escritorio/IG/IGp5/src/seleccion.i: home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/seleccion.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/seleccion.s: home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/seleccion.s
+home/isabel/Escritorio/IG/IGp5/src/seleccion.s: home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/seleccion.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/seleccion.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/seleccion.cpp.s
 
-home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.o: home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.o
+home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.o: home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.o
 
 # target to build an object file
-home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.o
+home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.o
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.o
 
-home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.i: home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.i
+home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.i: home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.i
 
 # target to preprocess a source file
-home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.i
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.i
+home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.i
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.i
 
-home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.s: home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.s
+home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.s: home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.s
 
 # target to generate assembly for a file
-home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.s
-.PHONY : home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.cpp.s
+home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_exe.dir/build.make CMakeFiles/debug_exe.dir/home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_exe.dir/build.make CMakeFiles/release_exe.dir/home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.s
+.PHONY : home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.cpp.s
 
 # Help Target
 help:
@@ -719,69 +719,69 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... debug_exe"
 	@echo "... release_exe"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/cauce.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/fbo.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/ig-aux.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-jpg.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/materiales/src-cpp/lector-ply.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/animacion.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/animacion.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/animacion.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/aplicacion-ig.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/camara.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/camara.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/camara.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/escena.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/escena.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/escena.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/eventos-raton.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/eventos-raton.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/eventos-raton.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/eventos-teclado.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/grafo-escena.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/grafo-escena.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/grafo-escena.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/latapeones.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/latapeones.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/latapeones.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/main.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/main.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/main.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/malla-ind.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/malla-ind.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/malla-ind.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/malla-revol.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/malla-revol.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/malla-revol.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/materiales-luces.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/materiales-luces.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/materiales-luces.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/modelo-jer.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/modelo-jer.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/modelo-jer.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/objeto3d.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/objeto3d.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/objeto3d.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/seleccion.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/seleccion.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/seleccion.s"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.o"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.i"
-	@echo "... home/isabel/Escritorio/IG/IGp4/src/vaos-vbos.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/cauce.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/fbo.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/ig-aux.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-jpg.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/materiales/src-cpp/lector-ply.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/animacion.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/animacion.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/animacion.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/aplicacion-ig.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/camara.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/camara.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/camara.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/escena.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/escena.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/escena.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/eventos-raton.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/eventos-raton.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/eventos-raton.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/eventos-teclado.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/grafo-escena.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/grafo-escena.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/grafo-escena.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/latapeones.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/latapeones.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/latapeones.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/main.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/main.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/main.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/malla-ind.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/malla-ind.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/malla-ind.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/malla-revol.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/malla-revol.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/malla-revol.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/materiales-luces.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/materiales-luces.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/materiales-luces.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/modelo-jer.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/modelo-jer.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/modelo-jer.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/objeto3d.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/objeto3d.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/objeto3d.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/seleccion.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/seleccion.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/seleccion.s"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.o"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.i"
+	@echo "... home/isabel/Escritorio/IG/IGp5/src/vaos-vbos.s"
 .PHONY : help
 
 

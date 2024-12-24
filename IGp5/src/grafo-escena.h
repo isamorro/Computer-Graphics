@@ -52,6 +52,7 @@ class NodoGrafoEscena : public Objeto3D
  
    // Práctica 3: definir variables y métodos privados del nodo
    std::vector<EntradaNGE> entradas ; // vector de entradas
+   bool centro_calculado = false;
 
    public:
 
@@ -177,6 +178,21 @@ class NodoDiscoP4 : public NodoGrafoEscena
 
 };
 
+// Ejercicio 3
+
+class TexturaEJ3 : public Textura 
+{
+   public:
+
+      TexturaEJ3(bool orientacion);
+};
+
+class NodoEJ3 : public NodoGrafoEscena
+{
+
+   public:
+      NodoEJ3(bool orientacion);
+};
 
 
 #endif // GRAFO_ESCENA_HPP
