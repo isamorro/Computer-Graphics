@@ -17,7 +17,7 @@ class Peon : public NodoGrafoEscena {
 
     public:
         Peon (int nperfiles);
-        bool cuandoClick(const glm::vec3 &centro_wc) override;
+        bool cuandoClick( const glm::vec3 & centro_wc) override;
 
     protected:
         glm::mat4 *pm_tras = nullptr;

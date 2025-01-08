@@ -178,7 +178,7 @@ Lampara::Lampara()
 
     NodoGrafoEscena *base = new NodoGrafoEscena();
     base->ponerNombre("Base de la lámpara");
-    base->ponerIdentificador(identificador);
+    base->ponerIdentificador(identificador); // 1
     identificador++;
 
     base->agregar(matMarmol);
@@ -189,7 +189,7 @@ Lampara::Lampara()
 
     NodoGrafoEscena *brazo_inferior = new NodoGrafoEscena();
     brazo_inferior->ponerNombre("Brazo inferior de la lámpara");
-    brazo_inferior->ponerIdentificador(identificador);
+    brazo_inferior->ponerIdentificador(identificador); // 2
     identificador++;
 
     brazo_inferior->agregar(matBrazoInferior);
@@ -200,7 +200,7 @@ Lampara::Lampara()
 
     NodoGrafoEscena *brazo_superior = new NodoGrafoEscena();
     brazo_superior->ponerNombre("Brazo superior de la lámpara");
-    brazo_superior->ponerIdentificador(identificador);
+    brazo_superior->ponerIdentificador(identificador); // 3
     identificador++;
 
     brazo_superior->agregar(matMetal);    
@@ -210,7 +210,7 @@ Lampara::Lampara()
 
     NodoGrafoEscena *brazo_lateral = new NodoGrafoEscena();
     brazo_lateral->ponerNombre("Brazo lateral de la lámpara");
-    brazo_lateral->ponerIdentificador(identificador);
+    brazo_lateral->ponerIdentificador(identificador); // 4
     identificador++;
 
     unsigned indice_traslacion_b_lat = brazo_lateral->agregar(translate(vec3{0.0, 0.0, 0.0}));  // 0
@@ -222,7 +222,7 @@ Lampara::Lampara()
 
     NodoGrafoEscena *cabezal = new NodoGrafoEscena();
     cabezal->ponerNombre("Cabezal de la lámpara");
-    cabezal->ponerIdentificador(identificador);
+    cabezal->ponerIdentificador(identificador); // 5
     identificador++;
 
     unsigned indice_rotacion_cabezal = cabezal->agregar(rotate(0.0f, vec3(0.0, 1.0, 0.0)));     // 1
@@ -234,7 +234,7 @@ Lampara::Lampara()
 
     NodoGrafoEscena *bombilla = new NodoGrafoEscena();
     bombilla->ponerNombre("Bombilla de la lámpara");
-    bombilla->ponerIdentificador(identificador);
+    bombilla->ponerIdentificador(identificador); // 6
     identificador++;
 
     unsigned indice_scale_bombilla = bombilla->agregar(scale(vec3(1.0, 1.0, 1.0)));             // 2
@@ -247,7 +247,7 @@ Lampara::Lampara()
 
     NodoGrafoEscena *interruptor = new NodoGrafoEscena();
     interruptor->ponerNombre("Interruptor de la lámpara");
-    interruptor->ponerIdentificador(identificador);
+    interruptor->ponerIdentificador(identificador); // 7
     identificador++;
 
     interruptor->agregar(matMarmol);

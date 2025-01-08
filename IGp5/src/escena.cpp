@@ -391,7 +391,8 @@ Escena5::Escena5(){
    objetos.push_back(new VariasLatasPeones());
 
    // ----------------------EJERCICIOS OPCIONALES------------------------------
-
+   objetos.push_back(new GrafoEsferasP5());
+   objetos.push_back(new GrafoEsferasP5_2());
 }
 
 

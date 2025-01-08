@@ -11,8 +11,8 @@ Peon::Peon(int nperfiles) {
     agregar(new MallaRevolPLY("peon.ply", nperfiles));
 }
 
-bool Peon::cuandoClick(const glm::vec3 & centro_oc) {
-    *pm_tras = translate(vec3(0.0, 0.0, 1.0));
+bool Peon::cuandoClick( const glm::vec3 & centro_wc) {
+    *pm_tras *= translate(vec3(0.0, 0.0, 1.0));
     return true;
 }
 
@@ -22,7 +22,6 @@ Lata::Lata(const std::string &nombre_archivo)
     NodoGrafoEscena *objeto = new NodoGrafoEscena();
 
 // Perfil parte central
-
     NodoGrafoEscena *perfil = new NodoGrafoEscena();
     // perfil->ponerIdentificador(identificador); // 1
     // identificador++;
@@ -58,60 +57,56 @@ LataPeones::LataPeones()
 {
 
     NodoGrafoEscena *objeto = new NodoGrafoEscena();
-    Peon *mallaPeon = new Peon(50);
     unsigned int identificador = 1;
 
-// PEONES
+    NodoGrafoEscena* peones = new NodoGrafoEscena();
+    peones->agregar(translate(vec3(0.0, 0.2, 0.7)));
+    peones->agregar(scale(vec3(0.15, 0.15, 0.15)));
 
-// Peón Madera
-    NodoGrafoEscena *peonMadera = new NodoGrafoEscena();
+
+    Peon *peonMadera = new Peon (50);
     peonMadera->ponerNombre("Peón de madera (usa textura de madera)");
     peonMadera->ponerIdentificador(identificador); // 1
     identificador++;
     // textura madera difuso-especular
     TexturaXY *textMadera = new TexturaXY("text-madera.jpg");
-    peonMadera->agregar(translate(vec3(0.0, 0.2, 1.0)));
-    peonMadera->agregar(scale(vec3(0.15, 0.15, 0.15)));
-    peonMadera->agregar(new Material (textMadera, 0.5, 0.6, 0.5, 50.0));
-    peonMadera->agregar(mallaPeon);
+    peones->agregar(new Material (textMadera, 0.5, 0.6, 0.5, 50.0));
+    peones->agregar(peonMadera);
 
-// Peón Blanco
-    NodoGrafoEscena *peonBlanco = new NodoGrafoEscena();
+
+    Peon *peonBlanco = new Peon (50);
     peonBlanco->ponerNombre("Peón blanco (material difuso blanco)");
     peonBlanco->ponerIdentificador(identificador);
     identificador++; // 2
-    peonBlanco->agregar(translate(vec3(0.4, 0.2, 1.0)));
-    peonBlanco->agregar(scale(vec3(0.15, 0.15, 0.15)));
+    peones->agregar(translate(vec3(2.5, 0.0, 0.0)));
     // difuso de color blanco
-    peonBlanco->agregar(new Material (0.5, 0.2, 0.5, 5.0));
-    peonBlanco->agregar(mallaPeon);
+    peones->agregar(new Material (0.5, 0.2, 0.5, 5.0));
+    peones->agregar(peonBlanco);
 
-// Peón Negro
-    NodoGrafoEscena *peonNegro = new NodoGrafoEscena();
+
+    Peon *peonNegro = new Peon(50);
     peonNegro->ponerNombre("Peón negro (material especular, sin apenas componente difusa)");
     peonNegro->ponerIdentificador(identificador); // 3
     identificador++;
-    peonNegro->agregar(translate(vec3(0.8, 0.2, 1.0)));
-    peonNegro->agregar(scale(vec3(0.15, 0.15, 0.15)));
+    peones->agregar(translate(vec3(2.5, 0.0, 0.0)));
     // especular sin apenas reflectividad difusa
-    peonNegro->agregar(new Material (0.01, 0.2, 0.5, 50.0));
-    peonNegro->agregar(mallaPeon);
+    peones->agregar(new Material (0.01, 0.2, 0.5, 50.0));
+    peones->agregar(peonNegro);
 
-// LATA
 
     Lata *lataCocacola = new Lata("lata-coke.jpg");
     lataCocacola->ponerNombre("lata de Coca-Cola (textura de lata de Coca-Cola)");
     lataCocacola->ponerIdentificador(identificador); // 4
 
-// OBJETO
 
-    objeto->agregar(peonMadera);
-    objeto->agregar(peonBlanco);
-    objeto->agregar(peonNegro);
+    objeto->agregar(peones);
     objeto->agregar(lataCocacola);
 
     agregar(objeto);
+
 }
+
+// Práctica 5
 
 VariasLatasPeones::VariasLatasPeones()
 {

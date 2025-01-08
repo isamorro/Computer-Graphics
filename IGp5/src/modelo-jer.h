@@ -2,7 +2,7 @@
 // Email: isabelmorro@correo.ugr.es, DNI: 79095945A
 
 #ifndef MODELO_JER_HPP
-#define MODELO_JER_HPP
+#define MODELO_JER_HPP 
 
 #include "grafo-escena.h"
 #include "ig-aux.h"
