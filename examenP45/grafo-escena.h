@@ -239,19 +239,5 @@ class GrafoEsferasP5_2 : public NodoGrafoEscena {
       GrafoEsferasP5_2();
 };
 
-
-// EJERCICIO ADICIONAL EXAMEN P4
-
-class PiramideRayada : public NodoGrafoEscena {
-   public:
-      PiramideRayada();
-};
-
-class NodoEXP4: public NodoGrafoEscena {
-   public:
-      NodoEXP4();
-};
-
-
 #endif // GRAFO_ESCENA_HPP
 

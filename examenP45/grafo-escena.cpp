@@ -820,25 +820,3 @@ GrafoEsferasP5_2::GrafoEsferasP5_2(){
       agregar(glm::rotate(angulo,glm::vec3(0.0,1.0,0.0)));
    }
 }
-
-// EJERCICIO ADICIONAL EXAMEN P4
-
-PiramideRayada::PiramideRayada(){
-
-   Textura *textura = new Textura("textura-examen.jpg");
-   Material *material = new Material(textura, 0.5, 0.8, 0.2, 100.0);
-
-   ponerNombre("Piramide rayada");
-   agregar(material);
-   agregar(new Piramide()); // EN MALLA-IND
-}
-
-NodoEXP4::NodoEXP4(){
-
-   Textura *textura = new Textura("textura-examen.jpg");
-   Material *material = new Material(textura, 0.5, 0.8, 0.2, 100.0);
-
-   ponerNombre("Nodo ejercicio adicional práctica 4, examen 27 enero");
-   agregar(material);
-   agregar(new MallaEXP4()); // EN MALLA-IND
-}

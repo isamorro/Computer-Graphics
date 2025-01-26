@@ -11,6 +11,7 @@
 #include "escena.h"
 #include "modelo-jer.h"
 #include "latapeones.h"
+#include "examen-ec-p45.h"
 
 
 // -----------------------------------------------------------------------------------------------
@@ -365,19 +366,16 @@ Escena4::Escena4(){
    using namespace std;
    cout << "Creando objetos de la práctica 4." << endl;
 
-   // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
-   objetos.push_back(new LataPeones());
-   objetos.push_back(new NodoCubo24());
+   // // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
+   // objetos.push_back(new LataPeones());
+   // objetos.push_back(new NodoCubo24());
 
-   // ----------------------EJERCICIOS OPCIONALES------------------------------
-   objetos.push_back(new NodoDiscoP4());
-   objetos.push_back(new NodoEJ3(true));
-   objetos.push_back(new NodoEJ3(false));
+   // // ----------------------EJERCICIOS OPCIONALES------------------------------
+   // objetos.push_back(new NodoDiscoP4());
+   // objetos.push_back(new NodoEJ3(true));
+   // objetos.push_back(new NodoEJ3(false));
 
-   // EJERCICIO ADICIONAL EXAMEN P4
-   objetos.push_back(new PiramideRayada());
-   objetos.push_back(new NodoEXP4());
-
+   objetos.push_back(new PiramideNodo());
 }
 
 
@@ -392,13 +390,14 @@ Escena5::Escena5(){
    using namespace std;
    cout << "Creando objetos de la práctica 5." << endl;
 
-   // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
-   objetos.push_back(new VariasLatasPeones());
+   // // ----------------------EJERCICIOS OBLIGATORIOS------------------------------
+   // objetos.push_back(new VariasLatasPeones());
 
-   // ----------------------EJERCICIOS OPCIONALES------------------------------
-   objetos.push_back(new GrafoEsferasP5());
-   objetos.push_back(new GrafoEsferasP5_2());
+   // // ----------------------EJERCICIOS OPCIONALES------------------------------
+   // objetos.push_back(new GrafoEsferasP5());
+   // objetos.push_back(new GrafoEsferasP5_2());
 
+   objetos.push_back(new NodoP5());
 
 }
 
